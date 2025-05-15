@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Logo from './Logo';
+
 const HeroSection = () => {
   return <section className="relative bg-gradient-to-br from-myclub-blue to-myclub-darkblue pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background Decoration Elements */}
@@ -36,8 +37,8 @@ const HeroSection = () => {
           <div className="hidden lg:flex items-center justify-center relative">
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl animate-fade-in">
               <div className="w-full h-full relative">
-                <img src="/lovable-uploads/5873d233-eedc-4174-bbfa-c7643eb7efbb.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-myclub-darkblue/10 rounded-xl"></div>
+                <img src="/lovable-uploads/be1d1a27-f16b-4949-8fed-e3b2a7abeeda.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
+                <div className="absolute inset-0 bg-gradient-to-t from-myclub-darkblue/20 to-transparent rounded-xl"></div>
               </div>
             </div>
             <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
@@ -56,4 +57,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
