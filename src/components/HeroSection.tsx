@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -30,9 +29,7 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-            <p className="mt-6 text-white/80 text-sm">
-              Keine Kreditkarte erforderlich • 30 Tage kostenlos • Jederzeit kündbar
-            </p>
+            <p className="mt-6 text-white/80 text-sm">30 Tage kostenlos • Jederzeit kündbar</p>
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
@@ -49,14 +46,7 @@ const HeroSection = () => {
         </div>
         
         {/* Trusted By Section */}
-        <div className="mt-20 text-center">
-          <p className="text-white/70 text-sm uppercase font-medium tracking-wider mb-6">Vertraut von führenden Vereinen</p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {[1, 2, 3, 4, 5].map(i => <div key={i} className="bg-white/10 h-12 w-32 rounded-md backdrop-blur-sm flex items-center justify-center">
-                <div className="text-white font-semibold">Verein {i}</div>
-              </div>)}
-          </div>
-        </div>
+        
       </div>
       
       {/* Wave Divider */}

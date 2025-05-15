@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -15,46 +13,31 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
-  return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+  return <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <Logo 
-            variant={isScrolled ? 'dark' : 'light'} 
-            size="md" 
-            className="mr-2" 
-          />
+          <Logo variant={isScrolled ? 'dark' : 'light'} size="md" className="mr-2" />
         </a>
         
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10">
-          {['Features', 'Für wen', 'Preise', 'Über uns'].map((item) => (
-            <li key={item}>
-              <a 
-                href={`#${item.toLowerCase().replace(' ', '-')}`} 
-                className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-myclub-blue transition-colors font-medium`}
-              >
+          {['Features', 'Für wen', 'Preise', 'Über uns'].map(item => <li key={item}>
+              <a href={`#${item.toLowerCase().replace(' ', '-')}`} className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-myclub-blue transition-colors font-medium`}>
                 {item}
               </a>
-            </li>
-          ))}
+            </li>)}
         </ul>
         
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className={isScrolled ? 'border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white' : 'border-white text-white hover:bg-white hover:text-myclub-blue'}>
-            Login
-          </Button>
+          
           <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue">
             Kostenlos testen
           </Button>
@@ -62,12 +45,7 @@ const Navbar = () => {
         
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            onClick={toggleMenu}
-            className={isScrolled ? 'text-myclub-blue' : 'text-white'}
-          >
+          <Button variant="ghost" size="icon" onClick={toggleMenu} className={isScrolled ? 'text-myclub-blue' : 'text-white'}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
         </div>
@@ -77,17 +55,11 @@ const Navbar = () => {
       <div className={`md:hidden bg-white absolute w-full ${isMenuOpen ? 'max-h-[500px] py-5' : 'max-h-0'} overflow-hidden transition-all duration-300`}>
         <div className="container-custom flex flex-col space-y-4 pb-5">
           <ul className="flex flex-col space-y-4">
-            {['Features', 'Für wen', 'Preise', 'Über uns'].map((item) => (
-              <li key={item}>
-                <a 
-                  href={`#${item.toLowerCase().replace(' ', '-')}`} 
-                  className="text-gray-700 hover:text-myclub-blue transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
+            {['Features', 'Für wen', 'Preise', 'Über uns'].map(item => <li key={item}>
+                <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-gray-700 hover:text-myclub-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
                   {item}
                 </a>
-              </li>
-            ))}
+              </li>)}
           </ul>
           <div className="flex flex-col space-y-3">
             <Button variant="outline" className="border-myclub-blue text-myclub-blue w-full">
@@ -99,8 +71,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navbar;
