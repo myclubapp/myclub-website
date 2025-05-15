@@ -61,9 +61,7 @@ const MissionSection = () => {
                 "Sportvereine sind das Rückgrat unserer Gesellschaft. Wir machen sie fit für die digitale Zukunft."
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-myclub-blue font-bold text-xl mr-4">
-                  M
-                </div>
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-myclub-blue font-bold text-xl mr-4">SS</div>
                 <div>
                   <h4 className="font-bold">Sandro Scalco</h4>
                   <p className="text-white/80">CEO & Gründer, myclub</p>
