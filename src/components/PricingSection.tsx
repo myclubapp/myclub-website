@@ -49,7 +49,7 @@ const plans = [
     monthlyPrice: "14.90",
     yearlyPrice: "149.00",
     features: [
-      "Alle STARTER Features",
+      "Verbands-News",
       "Priority Support",
       "Helfer-Events",
       "Championship Module",
