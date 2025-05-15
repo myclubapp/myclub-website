@@ -24,7 +24,7 @@ const HeroSection = () => {
               Die All-in-One Plattform für <span className="text-myclub-yellow">Sportvereine</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto lg:mx-0">
-              Digitalisieren Sie Ihr Vereinsleben mit myclub. Einfacher. Transparenter. Effizienter.
+              Digitalisiere Dein Vereinsleben mit myclub. Einfacher. Transparenter. Effizienter.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-white text-myclub-blue hover:bg-gray-100 text-lg px-8 py-6 rounded-full">
@@ -36,7 +36,7 @@ const HeroSection = () => {
               </Button>
             </div>
             <p className="mt-6 text-white/80 text-sm">
-              Keine Kreditkarte erforderlich • 30 Tage kostenlos • Cancel anytime
+              Keine Kreditkarte erforderlich • 30 Tage kostenlos • Jederzeit kündbar
             </p>
           </div>
           

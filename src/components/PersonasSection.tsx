@@ -111,11 +111,11 @@ const PersonasSection = () => {
         
         <div className="mt-16 text-center">
           <p className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
-            Vereinfachen Sie das Vereinsleben für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
+            Vereinfache Dein Vereinsleben für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
             myclub bietet jedem die passende Lösung.
           </p>
           <a href="#" className="btn btn-primary">
-            Für Ihren Verein testen
+            Für Deinen Verein testen
           </a>
         </div>
       </div>

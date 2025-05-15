@@ -18,11 +18,11 @@ const CtaSection = () => {
             <Logo variant="light" size="md" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Bereit, Ihren Verein zu digitalisieren?
+            Bereit, Deinen Verein zu digitalisieren?
           </h2>
           <p className="text-lg md:text-xl text-white/80 mb-10">
-            Starten Sie Ihre 30-tägige kostenlose Testphase und entdecken Sie, wie myclub 
-            Ihr Vereinsleben transformieren kann.
+            Starte Deine 30-tägige kostenlose Testphase und entdecke, wie myclub 
+            Dein Vereinsleben transformieren kann.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +36,7 @@ const CtaSection = () => {
           </div>
           
           <p className="mt-8 text-white/70">
-            Schließen Sie sich über 500+ Vereinen an, die bereits mit myclub arbeiten
+            Schließe Dich über 500+ Vereinen an, die bereits mit myclub arbeiten
           </p>
         </div>
       </div>
