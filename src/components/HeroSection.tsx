@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -35,7 +36,7 @@ const HeroSection = () => {
           <div className="hidden lg:flex items-center justify-center relative">
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl animate-fade-in">
               <div className="w-full h-full relative">
-                <img src="/lovable-uploads/e8e070b4-80a2-4341-b70f-2fdab0010bb7.png" alt="myclub App" className="w-64 h-64 object-contain mx-auto" />
+                <img src="/lovable-uploads/5873d233-eedc-4174-bbfa-c7643eb7efbb.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-myclub-darkblue/10 rounded-xl"></div>
               </div>
             </div>
