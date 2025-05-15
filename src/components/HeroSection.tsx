@@ -39,9 +39,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-myclub-darkblue/10 rounded-xl"></div>
               </div>
             </div>
-            <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">
-              Multi-Platform App
-            </div>
+            <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
           </div>
         </div>
         
