@@ -5,10 +5,10 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    description: "Ideal für kleine Vereine bis 50 Mitglieder",
-    monthlyPrice: "49",
-    yearlyPrice: "39",
+    name: "my club | small",
+    description: "Ideal für kleine Vereine bis 75 Mitglieder",
+    monthlyPrice: "4.90",
+    yearlyPrice: "49.00",
     features: [
       "1 Mannschaft",
       "Benutzerverwaltung",
@@ -19,16 +19,17 @@ const plans = [
     ],
     cta: "Jetzt starten",
     ctaVariant: "outline",
-    popular: false
+    popular: false,
+    coverage: "Erfasst ca. 50% aller Vereine"
   },
   {
-    name: "Premium",
-    description: "Perfekt für mittelgroße Vereine bis 200 Mitglieder",
-    monthlyPrice: "99",
-    yearlyPrice: "79",
+    name: "my club | medium",
+    description: "Perfekt für Vereine mit 76-200 Mitgliedern",
+    monthlyPrice: "12.90",
+    yearlyPrice: "129.00",
     features: [
       "5 Mannschaften",
-      "Alles aus Starter",
+      "Alles aus small",
       "Helfer-Events",
       "Championship Module",
       "Push-Benachrichtigungen",
@@ -36,16 +37,17 @@ const plans = [
     ],
     cta: "Empfohlen",
     ctaVariant: "default",
-    popular: true
+    popular: true,
+    coverage: "Erfasst ca. 35% aller Vereine"
   },
   {
-    name: "Enterprise",
-    description: "Für große Vereine mit unbegrenzten Mitgliedern",
-    monthlyPrice: "249",
-    yearlyPrice: "199",
+    name: "my club | large",
+    description: "Für grosse Vereine ab 201 Mitglieder",
+    monthlyPrice: "19.90",
+    yearlyPrice: "219.00",
     features: [
       "Unbegrenzte Mannschaften",
-      "Alles aus Premium",
+      "Alles aus medium",
       "Vollständiges Reporting",
       "API-Zugriff",
       "White-Label Option",
@@ -53,7 +55,8 @@ const plans = [
     ],
     cta: "Kontaktieren",
     ctaVariant: "outline",
-    popular: false
+    popular: false,
+    coverage: "Erfasst ca. 15% aller Vereine"
   }
 ];
 
@@ -82,7 +85,7 @@ const PricingSection = () => {
                 onClick={() => setIsYearly(true)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${isYearly ? 'bg-white shadow-sm text-myclub-blue' : 'text-gray-600'}`}
               >
-                Jährlich <span className="text-myclub-green">-20%</span>
+                Jährlich
               </button>
             </div>
           </div>
@@ -100,13 +103,15 @@ const PricingSection = () => {
                 </span>
               )}
               <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-              <p className="text-gray-600 mb-6 h-12">{plan.description}</p>
+              <p className="text-gray-600 mb-6">{plan.description}</p>
               
               <div className="mb-6">
-                <span className="text-4xl font-bold">€{isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
-                <span className="text-gray-600">/Monat</span>
+                <span className="text-4xl font-bold">CHF {isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
+                <span className="text-gray-600">/{isYearly ? 'Jahr' : 'Monat'}</span>
                 {isYearly && <p className="text-sm text-myclub-green mt-1">Jährliche Abrechnung</p>}
               </div>
+              
+              <p className="text-sm text-myclub-blue mb-4 font-medium">{plan.coverage}</p>
               
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, idx) => (
