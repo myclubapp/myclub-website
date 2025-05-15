@@ -120,7 +120,7 @@ const additionalModules = [
 ];
 
 const PricingSection = () => {
-  const [isYearly, setIsYearly] = useState(true);
+  const [isYearly, setIsYearly] = useState(false);
   
   return (
     <section id="preise" className="section bg-white">
@@ -247,3 +247,4 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
+
