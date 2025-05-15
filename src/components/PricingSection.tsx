@@ -92,10 +92,10 @@ const PricingSection = () => {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`rounded-2xl border ${plan.popular ? 'border-myclub-blue shadow-lg shadow-myclub-blue/5' : 'border-gray-200'} p-8 relative`}
+              className={`rounded-2xl border ${plan.popular ? 'border-myclub-purple shadow-lg shadow-myclub-purple/5' : 'border-gray-200'} p-8 relative`}
             >
               {plan.popular && (
-                <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-myclub-blue text-white text-xs font-bold px-3 py-1 rounded-full">
+                <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-myclub-purple text-white text-xs font-bold px-3 py-1 rounded-full">
                   Beliebt
                 </span>
               )}
@@ -119,7 +119,8 @@ const PricingSection = () => {
               
               <Button 
                 variant={plan.ctaVariant as "default" | "outline"} 
-                className={`w-full ${plan.popular ? 'bg-myclub-blue hover:bg-myclub-darkblue text-white' : ''}`}
+                className={`w-full ${plan.popular ? 'bg-myclub-purple hover:bg-myclub-darkpurple text-white' : 
+                plan.ctaVariant === "outline" ? 'border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white' : ''}`}
               >
                 {plan.cta}
               </Button>

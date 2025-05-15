@@ -74,7 +74,7 @@ const MissionSection = () => {
               </div>
             </div>
             
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-myclub-yellow rounded-full opacity-20"></div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-myclub-purple rounded-full opacity-20"></div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-myclub-green rounded-full opacity-20"></div>
           </div>
         </div>

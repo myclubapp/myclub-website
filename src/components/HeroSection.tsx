@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute top-10 right-10 w-64 h-64 bg-myclub-lightblue rounded-full opacity-10 animate-float"></div>
         <div className="absolute bottom-10 left-20 w-80 h-80 bg-white rounded-full opacity-5"></div>
-        <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-myclub-green rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-myclub-purple rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
       
       <div className="container-custom relative z-10">
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-myclub-darkblue/10 rounded-xl"></div>
               </div>
             </div>
-            <div className="absolute -bottom-5 -right-5 bg-myclub-green text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">
+            <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">
               Multi-Platform App
             </div>
           </div>

@@ -27,7 +27,7 @@ const personas = [
       "Schnelle An-/Abmeldungsverwaltung",
       "Mobile Zugriff auf Spielerdaten"
     ],
-    color: "green"
+    color: "purple" // Changed from green to purple to use the secondary color
   },
   {
     icon: "⚽",
@@ -70,28 +70,43 @@ const PersonasSection = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {personas.map((persona, index) => (
-            <div 
-              key={index}
-              className={`bg-white rounded-xl shadow-md p-8 border-t-4 border-myclub-${persona.color}`}
-            >
-              <div className="text-4xl mb-4">{persona.icon}</div>
-              <h3 className="text-2xl font-bold mb-2">{persona.title}</h3>
-              
-              <Badge variant="outline" className="mb-5 font-normal text-sm bg-gray-50">
-                Problem: {persona.problem}
-              </Badge>
-              
-              <ul className="space-y-3">
-                {persona.solutions.map((solution, idx) => (
-                  <li key={idx} className="flex items-center">
-                    <div className={`w-2 h-2 rounded-full bg-myclub-${persona.color} mr-3`}></div>
-                    <span className="text-gray-700">{solution}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {personas.map((persona, index) => {
+            // Map the color names to the new tailwind classes
+            const borderColorClass = 
+              persona.color === "blue" ? "border-myclub-blue" :
+              persona.color === "purple" ? "border-myclub-purple" :
+              persona.color === "red" ? "border-myclub-red" :
+              "border-myclub-yellow";
+            
+            const dotColorClass =
+              persona.color === "blue" ? "bg-myclub-blue" :
+              persona.color === "purple" ? "bg-myclub-purple" :
+              persona.color === "red" ? "bg-myclub-red" :
+              "bg-myclub-yellow";
+            
+            return (
+              <div 
+                key={index}
+                className={`bg-white rounded-xl shadow-md p-8 border-t-4 ${borderColorClass}`}
+              >
+                <div className="text-4xl mb-4">{persona.icon}</div>
+                <h3 className="text-2xl font-bold mb-2">{persona.title}</h3>
+                
+                <Badge variant="outline" className="mb-5 font-normal text-sm bg-gray-50">
+                  Problem: {persona.problem}
+                </Badge>
+                
+                <ul className="space-y-3">
+                  {persona.solutions.map((solution, idx) => (
+                    <li key={idx} className="flex items-center">
+                      <div className={`w-2 h-2 rounded-full ${dotColorClass} mr-3`}></div>
+                      <span className="text-gray-700">{solution}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
         
         <div className="mt-16 text-center">

@@ -64,9 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				myclub: {
-					blue: '#2563eb',
-					darkblue: '#1e40af',
-					lightblue: '#60a5fa',
+					blue: '#339bde', // Updated primary color
+					darkblue: '#2578b1', // Darker shade of primary
+					lightblue: '#6cb6e6', // Lighter shade of primary
+					purple: '#795deb', // Secondary color
+					darkpurple: '#5e49b8', // Darker shade of secondary
+					lightpurple: '#9a86f0', // Lighter shade of secondary
 					green: '#10b981',
 					red: '#ef4444',
 					yellow: '#f59e0b',
