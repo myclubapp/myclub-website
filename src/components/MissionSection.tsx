@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 const MissionSection = () => {
@@ -22,10 +21,7 @@ const MissionSection = () => {
               
               <div>
                 <h3 className="text-xl font-bold mb-2">Vision</h3>
-                <p className="text-gray-600">
-                  myclub wird die führende digitale Plattform für Sportvereine im deutschsprachigen Raum, 
-                  die Verwaltung, Kommunikation und Organisation nahtlos vereint.
-                </p>
+                <p className="text-gray-600">myclub wird die führende digitale Plattform für Sportvereine, die Verwaltung, Kommunikation und Organisation nahtlos vereint.</p>
               </div>
               
               <div>
