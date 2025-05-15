@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="text-center lg:text-left">
             <div className="mb-6 flex justify-center lg:justify-start">
-              <Logo variant="colored" size="lg" className="inline-block" />
+              <Logo size="lg" className="inline-block" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Die All-in-One Plattform für <span className="text-myclub-yellow">Sportvereine</span>
@@ -44,7 +44,7 @@ const HeroSection = () => {
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl animate-fade-in">
               <div className="w-full h-full relative">
                 <img 
-                  src="/lovable-uploads/af203d05-a168-4ed0-bf41-99382e84cfe6.png" 
+                  src="/lovable-uploads/e8e070b4-80a2-4341-b70f-2fdab0010bb7.png" 
                   alt="myclub App" 
                   className="w-64 h-64 object-contain mx-auto"
                 />

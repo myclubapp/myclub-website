@@ -19,19 +19,23 @@ const Logo: React.FC<LogoProps> = ({
     lg: 'h-12'
   };
 
-  // Choose the appropriate logo based on variant
-  const logoSrc = variant === 'light' 
-    ? '/lovable-uploads/2ac8e449-d690-4951-a533-ead9382cbb69.png' 
+  // New logo
+  const newLogo = '/lovable-uploads/e8e070b4-80a2-4341-b70f-2fdab0010bb7.png';
+  
+  // For visual consistency, we'll use the same logo regardless of variant
+  // but we can apply different styling based on variant
+  const variantClasses = variant === 'light' 
+    ? 'brightness-[1.15]' 
     : variant === 'dark' 
-      ? '/lovable-uploads/cb539770-ab12-4233-ae3a-18bdce0dd13f.png'
-      : '/lovable-uploads/af203d05-a168-4ed0-bf41-99382e84cfe6.png';
+      ? 'brightness-100' 
+      : '';
   
   return (
     <div className={`flex items-center ${className}`}>
       <img 
-        src={logoSrc} 
+        src={newLogo} 
         alt="myclub Logo" 
-        className={`${sizeClasses[size]} object-contain`}
+        className={`${sizeClasses[size]} object-contain ${variantClasses}`}
       />
     </div>
   );
