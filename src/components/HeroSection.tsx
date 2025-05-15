@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Logo from './Logo';
 
 const HeroSection = () => {
   return (
@@ -16,6 +17,9 @@ const HeroSection = () => {
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="text-center lg:text-left">
+            <div className="mb-6 flex justify-center lg:justify-start">
+              <Logo variant="colored" size="lg" className="inline-block" />
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Die All-in-One Plattform für <span className="text-myclub-yellow">Sportvereine</span>
             </h1>
@@ -36,17 +40,15 @@ const HeroSection = () => {
             </p>
           </div>
           
-          <div className="hidden lg:block relative">
-            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-2 border border-white/20 shadow-xl animate-fade-in">
-              <div className="aspect-[9/16] rounded-xl overflow-hidden bg-gradient-to-br from-gray-100 to-white">
-                <div className="absolute inset-0 flex items-center justify-center text-myclub-blue">
-                  {/* This would be your app screenshot */}
-                  <div className="w-full h-full bg-gradient-to-br from-gray-100 to-white flex items-center justify-center">
-                    <div className="text-5xl font-bold text-myclub-blue">
-                      myclub
-                    </div>
-                  </div>
-                </div>
+          <div className="hidden lg:flex items-center justify-center relative">
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl animate-fade-in">
+              <div className="w-full h-full relative">
+                <img 
+                  src="/lovable-uploads/af203d05-a168-4ed0-bf41-99382e84cfe6.png" 
+                  alt="myclub App" 
+                  className="w-64 h-64 object-contain mx-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-myclub-darkblue/10 rounded-xl"></div>
               </div>
             </div>
             <div className="absolute -bottom-5 -right-5 bg-myclub-green text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">

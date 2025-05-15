@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Logo from './Logo';
 
 const CtaSection = () => {
   return (
@@ -13,6 +14,9 @@ const CtaSection = () => {
       
       <div className="container-custom py-16 md:py-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-6">
+            <Logo variant="light" size="md" />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Bereit, Ihren Verein zu digitalisieren?
           </h2>
