@@ -20,7 +20,7 @@ const Logo: React.FC<LogoProps> = ({
   };
 
   // New logo
-  const newLogo = '/lovable-uploads/e8e070b4-80a2-4341-b70f-2fdab0010bb7.png';
+  const newLogo = '/lovable-uploads/9eb0e361-1508-4d5e-a219-d6fff8ebdb1d.png';
   
   // For visual consistency, we'll use the same logo regardless of variant
   // but we can apply different styling based on variant
