@@ -21,7 +21,7 @@ const HeroSection = () => {
               <Logo size="lg" className="inline-block" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-              Die All-in-One Plattform für <span className="text-myclub-yellow">Sportvereine</span>
+              Vereinsarbeit, die wieder <span className="text-myclub-yellow">Freude macht</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto lg:mx-0">
               Digitalisiere Dein Vereinsleben mit myclub. Einfacher. Transparenter. Effizienter.
