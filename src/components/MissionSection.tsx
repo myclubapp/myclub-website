@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
-
 const MissionSection = () => {
-  return (
-    <section id="über-uns" className="section bg-white">
+  return <section id="über-uns" className="section bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -68,7 +65,7 @@ const MissionSection = () => {
                   M
                 </div>
                 <div>
-                  <h4 className="font-bold">Max Mustermann</h4>
+                  <h4 className="font-bold">Sandro Scalco</h4>
                   <p className="text-white/80">CEO & Gründer, myclub</p>
                 </div>
               </div>
@@ -79,8 +76,6 @@ const MissionSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MissionSection;
