@@ -12,7 +12,7 @@ const features = [
   {
     icon: <Shield className="h-6 w-6 text-myclub-blue" />,
     title: "Vereinsverwaltung",
-    description: "Professionelle Verwaltung für Clubs und Teams aller Größen.",
+    description: "Professionelle Verwaltung für Clubs und Teams aller Grossen.",
     items: ["Club-Struktur Management", "Subscription & Billing", "Team-Management", "Mitgliederverwaltung"]
   },
   {
