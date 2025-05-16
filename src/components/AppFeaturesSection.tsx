@@ -14,7 +14,7 @@ const features = [
     title: "Event Organisation",
     description: "Plane und organisiere Vereinsveranstaltungen, mit automatischen Benachrichtigungen für alle Beteiligten.",
     icon: <Calendar className="h-6 w-6 text-myclub-purple" />,
-    image: "/lovable-uploads/b17b48ea-20fe-4830-bfea-699523530ede.png",
+    image: "/lovable-uploads/f88d6cb3-9df6-4159-b6dc-8bf21ed6a36b.png",
     alt: "Event Management"
   },
   {
