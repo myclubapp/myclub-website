@@ -19,9 +19,9 @@ const Index = () => {
         <HeroSection />
         <AppPreviewSection />
         <MissionSection />
-        <PersonasSection />
-        <FeaturesSection />
-        <AppFeaturesSection />
+        {/* <PersonasSection /> */}
+        {/* <FeaturesSection /> */}
+        {/* <AppFeaturesSection /> */}
         <PricingSection />
         <CtaSection />
       </main>
