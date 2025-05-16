@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -33,11 +34,8 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
-            <div className="relative backdrop-blur-sm p-8 shadow-xl animate-fade-in rounded-none bg-transparent">
-              <div className="w-full h-full relative">
-                <img src="/lovable-uploads/fc9ae91f-40f5-4416-9e8c-6b14e2305ae2.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
-                <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent rounded-none bg-transparent"></div>
-              </div>
+            <div className="relative w-auto h-auto animate-fade-in rounded-lg overflow-hidden shadow-xl">
+              <img src="/lovable-uploads/fc9ae91f-40f5-4416-9e8c-6b14e2305ae2.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
           </div>
