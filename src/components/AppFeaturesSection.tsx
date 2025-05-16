@@ -1,41 +1,32 @@
-
 import React from 'react';
 import { Calendar, Users, Shield, Award } from "lucide-react";
-
-const features = [
-  {
-    title: "Mitgliederverwaltung",
-    description: "Verwalte deinen gesamten Verein mit allen Teams und Spielern in einer übersichtlichen Struktur.",
-    icon: <Users className="h-6 w-6 text-myclub-blue" />,
-    image: "/lovable-uploads/cc128b54-9cd4-4623-8885-e4b74c336182.png",
-    alt: "Club Management"
-  },
-  {
-    title: "Event Organisation",
-    description: "Plane und organisiere Vereinsveranstaltungen, mit automatischen Benachrichtigungen für alle Beteiligten.",
-    icon: <Calendar className="h-6 w-6 text-myclub-purple" />,
-    image: "/lovable-uploads/f88d6cb3-9df6-4159-b6dc-8bf21ed6a36b.png",
-    alt: "Event Management"
-  },
-  {
-    title: "Helferpunkte",
-    description: "Transparente Verwaltung und Nachverfolgung von Helfereinsätzen und verdienten Punkten.",
-    icon: <Shield className="h-6 w-6 text-myclub-green" />,
-    image: "/lovable-uploads/5cbca357-36ad-47d1-86f0-1748abe1f90f.png",
-    alt: "Helper Points"
-  },
-  {
-    title: "Training & Spielbetrieb",
-    description: "Einfache Planung und Koordination von Trainingseinheiten und Wettkämpfen.",
-    icon: <Award className="h-6 w-6 text-myclub-yellow" />,
-    image: "/lovable-uploads/b410d0ff-71ea-4bc0-a3bc-061500e9f004.png",
-    alt: "Training Management"
-  }
-];
-
+const features = [{
+  title: "Mitgliederverwaltung",
+  description: "Verwalte deinen gesamten Verein mit allen Teams und Spielern in einer übersichtlichen Struktur.",
+  icon: <Users className="h-6 w-6 text-myclub-blue" />,
+  image: "/lovable-uploads/cc128b54-9cd4-4623-8885-e4b74c336182.png",
+  alt: "Club Management"
+}, {
+  title: "Event Organisation",
+  description: "Plane und organisiere Vereinsveranstaltungen, mit automatischen Benachrichtigungen für alle Beteiligten.",
+  icon: <Calendar className="h-6 w-6 text-myclub-purple" />,
+  image: "/lovable-uploads/f88d6cb3-9df6-4159-b6dc-8bf21ed6a36b.png",
+  alt: "Event Management"
+}, {
+  title: "Helferpunkte",
+  description: "Transparente Verwaltung und Nachverfolgung von Helfereinsätzen und verdienten Punkten.",
+  icon: <Shield className="h-6 w-6 text-myclub-green" />,
+  image: "/lovable-uploads/5cbca357-36ad-47d1-86f0-1748abe1f90f.png",
+  alt: "Helper Points"
+}, {
+  title: "Training & Spielbetrieb",
+  description: "Einfache Planung und Koordination von Trainingseinheiten und Wettkämpfen.",
+  icon: <Award className="h-6 w-6 text-myclub-yellow" />,
+  image: "/lovable-uploads/b410d0ff-71ea-4bc0-a3bc-061500e9f004.png",
+  alt: "Training Management"
+}];
 const AppFeaturesSection = () => {
-  return (
-    <section className="section bg-black py-24">
+  return <section className="section bg-black py-24">
       <div className="container-custom">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Funktionen im Detail</h2>
@@ -44,8 +35,7 @@ const AppFeaturesSection = () => {
           </p>
         </div>
         
-        {features.map((feature, index) => (
-          <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12 mb-24 last:mb-0`}>
+        {features.map((feature, index) => <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12 mb-24 last:mb-0`}>
             <div className="w-full md:w-1/2">
               <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 md:p-10 rounded-2xl border border-white/10">
                 <div className="flex items-center mb-4">
@@ -57,8 +47,7 @@ const AppFeaturesSection = () => {
                 <p className="text-gray-300 mb-6">{feature.description}</p>
                 
                 <ul className="space-y-3">
-                  {index === 0 && (
-                    <>
+                  {index === 0 && <>
                       <li className="flex items-center text-gray-300">
                         <div className="w-2 h-2 bg-myclub-blue rounded-full mr-3"></div>
                         <span>Komplette Organisationsstruktur</span>
@@ -71,11 +60,9 @@ const AppFeaturesSection = () => {
                         <div className="w-2 h-2 bg-myclub-blue rounded-full mr-3"></div>
                         <span>Team-übergreifende Verwaltung</span>
                       </li>
-                    </>
-                  )}
+                    </>}
                   
-                  {index === 1 && (
-                    <>
+                  {index === 1 && <>
                       <li className="flex items-center text-gray-300">
                         <div className="w-2 h-2 bg-myclub-purple rounded-full mr-3"></div>
                         <span>Übersichtliche Eventplanung</span>
@@ -88,11 +75,9 @@ const AppFeaturesSection = () => {
                         <div className="w-2 h-2 bg-myclub-purple rounded-full mr-3"></div>
                         <span>Veranstaltungskalender</span>
                       </li>
-                    </>
-                  )}
+                    </>}
                   
-                  {index === 2 && (
-                    <>
+                  {index === 2 && <>
                       <li className="flex items-center text-gray-300">
                         <div className="w-2 h-2 bg-myclub-green rounded-full mr-3"></div>
                         <span>Punkteübersicht pro Saison</span>
@@ -105,11 +90,9 @@ const AppFeaturesSection = () => {
                         <div className="w-2 h-2 bg-myclub-green rounded-full mr-3"></div>
                         <span>Bestätigungsprozess durch Vorstand</span>
                       </li>
-                    </>
-                  )}
+                    </>}
                   
-                  {index === 3 && (
-                    <>
+                  {index === 3 && <>
                       <li className="flex items-center text-gray-300">
                         <div className="w-2 h-2 bg-myclub-yellow rounded-full mr-3"></div>
                         <span>Trainingseinheiten planen</span>
@@ -122,8 +105,7 @@ const AppFeaturesSection = () => {
                         <div className="w-2 h-2 bg-myclub-yellow rounded-full mr-3"></div>
                         <span>Ligazuordnung und Spielbetrieb</span>
                       </li>
-                    </>
-                  )}
+                    </>}
                 </ul>
               </div>
             </div>
@@ -131,19 +113,12 @@ const AppFeaturesSection = () => {
             <div className="w-full md:w-1/2">
               <div className="flex justify-center">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.alt} 
-                    className="w-full h-auto object-cover"
-                  />
+                  <img src={feature.image} alt={feature.alt} className="w-[400px] h-auto max-h-[800px] w-full h-auto object-cover" />
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          </div>)}
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AppFeaturesSection;
