@@ -17,7 +17,7 @@ const commonFeatures = [
 
 const plans = [
   {
-    name: "myclub | FREE",
+    name: "myclub | micro",
     description: "Für Vereine bis 20 Mitglieder",
     monthlyPrice: "0.00",
     yearlyPrice: "0.00",
@@ -31,7 +31,7 @@ const plans = [
     badge: "🆓"
   },
   {
-    name: "myclub | STARTER",
+    name: "myclub | small",
     description: "Für Vereine ab 20-79 Mitglieder",
     monthlyPrice: "6.90",
     yearlyPrice: "69.00",
@@ -45,7 +45,7 @@ const plans = [
     badge: "🟢"
   },
   {
-    name: "myclub | STANDARD",
+    name: "myclub | medium",
     description: "Für Vereine ab 80-199 Mitglieder",
     monthlyPrice: "12.90",
     yearlyPrice: "129.00",
@@ -59,7 +59,7 @@ const plans = [
     badge: "🔵"
   },
   {
-    name: "myclub | PREMIUM",
+    name: "myclub | large",
     description: "Für Vereine ab 200 Mitglieder",
     monthlyPrice: "24.90",
     yearlyPrice: "249.00",
