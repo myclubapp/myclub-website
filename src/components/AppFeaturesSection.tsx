@@ -28,7 +28,7 @@ const features = [
     title: "Training & Spielbetrieb",
     description: "Einfache Planung und Koordination von Trainingseinheiten und Wettkämpfen.",
     icon: <Award className="h-6 w-6 text-myclub-yellow" />,
-    image: "/lovable-uploads/e8642ffc-a945-4b81-9696-c8ffb6540b76.png",
+    image: "/lovable-uploads/b410d0ff-71ea-4bc0-a3bc-061500e9f004.png",
     alt: "Training Management"
   }
 ];
