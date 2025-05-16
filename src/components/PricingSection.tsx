@@ -14,8 +14,7 @@ const plans = [
       "Mitgliederverwaltung",
       "Unlimitierte Teams",
       "Unlimitierte Trainings",
-      "Unlimitierte Veranstaltungen",
-      "Basis-Support"
+      "Unlimitierte Veranstaltungen"
     ],
     cta: "Kostenlos starten",
     ctaVariant: "outline",
@@ -30,7 +29,7 @@ const plans = [
     yearlyPrice: "79.00",
     features: [
       "Alle FREE Features",
-      "E-Mail Support"
+     
     ],
     cta: "Jetzt starten",
     ctaVariant: "outline",
@@ -154,7 +153,7 @@ const PricingSection = () => {
                 )}
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <Badge className={`${plan.color} mb-3`}>{plan.badge}</Badge>
+                    {/* <Badge className={`${plan.color} mb-3`}>{plan.badge}</Badge> */}
                     <h3 className="text-xl font-bold text-white">{plan.name}</h3>
                   </div>
                 </div>
