@@ -7,7 +7,7 @@ const features = [
     title: "Mitgliederverwaltung",
     description: "Verwalte deinen gesamten Verein mit allen Teams und Spielern in einer übersichtlichen Struktur.",
     icon: <Users className="h-6 w-6 text-myclub-blue" />,
-    image: "/lovable-uploads/de3f109c-ec56-4174-975a-afbf783404fe.png",
+    image: "/lovable-uploads/cc128b54-9cd4-4623-8885-e4b74c336182.png",
     alt: "Club Management"
   },
   {
