@@ -77,9 +77,9 @@ const additionalModules = [
     name: "⚽ Meisterschafts-Modul",
     price: "5.90",
     features: [
-      "Spielplanung",
-      "Navigation",
-      "Resultate & Tabellen"
+      "API-Zugriff Verbandsdaten",
+      "Routenplanung",
+      "Ergebnisse & Tabellen"
     ]
   },
   {
@@ -88,16 +88,15 @@ const additionalModules = [
     features: [
       "Helfer-Events erstellen",
       "Schichtplanung",
-      "Punktesystem"
+      "Helfer-Punktesystem"
     ]
   },
   {
     name: "📱 Erweiterte Features (Bundle)",
     price: "7.90",
     features: [
-      "Erweiterte Statistiken",
-      "Dokumentenverwaltung",
-      "Sponsoren-Management",
+      "J+S Integration",
+      "Mitglieder-Beitragsverwaltung",
       "Newsletter-Tool"
     ]
   }
@@ -167,7 +166,7 @@ const PricingSection = () => {
                 )}
                 
                 <CardHeader>
-                  <Badge className="w-fit mb-2">{plan.badge}</Badge>
+                 {/* <Badge className="w-fit mb-2">{plan.badge}</Badge> */}
                   <CardTitle className="text-white">{plan.name}</CardTitle>
                   <CardDescription className="text-gray-400">{plan.description}</CardDescription>
                 </CardHeader>
