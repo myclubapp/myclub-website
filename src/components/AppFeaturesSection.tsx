@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Users, Shield, BarChart, Award } from "lucide-react";
+import { Calendar, Users, Shield, Award } from "lucide-react";
 
 const features = [
   {
@@ -130,11 +130,11 @@ const AppFeaturesSection = () => {
             
             <div className="w-full md:w-1/2">
               <div className="flex justify-center">
-                <div className="phone-mockup w-72 h-[560px]">
+                <div className="rounded-lg overflow-hidden shadow-xl">
                   <img 
                     src={feature.image} 
                     alt={feature.alt} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
