@@ -16,11 +16,11 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <FeaturesSection />
         <AppPreviewSection />
-        <PersonasSection />
-        <AppFeaturesSection />
         <MissionSection />
+        <PersonasSection />
+        <FeaturesSection />
+        <AppFeaturesSection />
         <CtaSection />
       </main>
       <Footer />
