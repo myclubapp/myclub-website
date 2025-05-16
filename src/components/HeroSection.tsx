@@ -69,7 +69,7 @@ const HeroSection = () => {
               <CarouselContent>
                 {appScreenshots.map((screenshot, index) => <CarouselItem key={index} className="flex items-center justify-center">
                     <div className="w-auto h-auto relative">
-                      <img src={screenshot.src} alt={screenshot.alt} className="w-[100px] h-auto mx-auto object-contain" />
+                      <img src={screenshot.src} alt={screenshot.alt} className="h-auto mx-auto object-contain" />
                     </div>
                   </CarouselItem>)}
               </CarouselContent>
