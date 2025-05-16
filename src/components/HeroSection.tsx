@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -69,9 +70,7 @@ const HeroSection = () => {
               <CarouselContent>
                 {appScreenshots.map((screenshot, index) => <CarouselItem key={index} className="flex items-center justify-center">
                     <div className="w-auto h-auto relative">
-                      <div className="phone-frame bg-black rounded-[40px] border-8 border-gray-800 shadow-xl overflow-hidden transform transition-transform">
-                        <img src={screenshot.src} alt={screenshot.alt} className="w-auto h-auto max-w-full mx-auto object-scale-down" />
-                      </div>
+                      <img src={screenshot.src} alt={screenshot.alt} className="w-auto h-auto max-w-full mx-auto object-scale-down" />
                     </div>
                   </CarouselItem>)}
               </CarouselContent>
