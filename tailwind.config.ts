@@ -64,7 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				myclub: {
-					blue: '#339bde', // Updated primary color
+					blue: '#339bde', // Primary color
 					darkblue: '#2578b1', // Darker shade of primary
 					lightblue: '#6cb6e6', // Lighter shade of primary
 					purple: '#795deb', // Secondary color
@@ -120,13 +120,24 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'phone-slide': {
+					'0%': {
+						transform: 'translateX(100%)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.7s ease-out forwards',
-				'float': 'float 5s ease-in-out infinite'
+				'float': 'float 5s ease-in-out infinite',
+				'phone-slide': 'phone-slide 0.7s ease-out forwards'
 			}
 		}
 	},

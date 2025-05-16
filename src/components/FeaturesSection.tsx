@@ -49,11 +49,11 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section bg-white py-20">
+    <section id="features" className="section bg-gray-900 py-20">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Alle Features für Ihren Verein</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Alle Features für Ihren Verein</h2>
+          <p className="text-lg text-gray-300">
             myclub bietet alles, was moderne Sportvereine benötigen. Eine umfassende Plattform, 
             die alle Aspekte des Vereinslebens digitalisiert und vereinfacht.
           </p>
@@ -65,16 +65,16 @@ const FeaturesSection = () => {
               key={index}
               className="feature-card hover:border-myclub-blue hover:border group"
             >
-              <div className="bg-myclub-blue/10 rounded-full p-3 inline-block mb-5 group-hover:bg-myclub-blue/20 transition-all">
+              <div className="bg-myclub-blue/20 rounded-full p-3 inline-block mb-5 group-hover:bg-myclub-blue/30 transition-all">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-600 mb-5">{feature.description}</p>
+              <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
+              <p className="text-gray-300 mb-5">{feature.description}</p>
               <ul className="space-y-2">
                 {feature.items.map((item, idx) => (
                   <li key={idx} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
               </ul>

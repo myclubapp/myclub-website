@@ -59,11 +59,11 @@ const personas = [
 
 const PersonasSection = () => {
   return (
-    <section id="für-wen" className="section bg-gray-50">
+    <section id="für-wen" className="section bg-black">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Die richtige Lösung für alle</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Die richtige Lösung für alle</h2>
+          <p className="text-lg text-gray-300">
             Myclub wurde entwickelt, um die spezifischen Probleme und Herausforderungen
             jeder Person im Vereinsumfeld zu lösen.
           </p>
@@ -87,12 +87,12 @@ const PersonasSection = () => {
             return (
               <div 
                 key={index}
-                className={`bg-white rounded-xl shadow-md p-8 border-t-4 ${borderColorClass}`}
+                className={`bg-gray-900/70 backdrop-blur-sm rounded-xl border border-white/10 p-8 border-t-4 ${borderColorClass}`}
               >
                 <div className="text-4xl mb-4">{persona.icon}</div>
-                <h3 className="text-2xl font-bold mb-2">{persona.title}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-white">{persona.title}</h3>
                 
-                <Badge variant="outline" className="mb-5 font-normal text-sm bg-gray-50">
+                <Badge variant="outline" className="mb-5 font-normal text-sm bg-black/30 text-gray-300 border-gray-700">
                   Problem: {persona.problem}
                 </Badge>
                 
@@ -100,7 +100,7 @@ const PersonasSection = () => {
                   {persona.solutions.map((solution, idx) => (
                     <li key={idx} className="flex items-center">
                       <div className={`w-2 h-2 rounded-full ${dotColorClass} mr-3`}></div>
-                      <span className="text-gray-700">{solution}</span>
+                      <span className="text-gray-300">{solution}</span>
                     </li>
                   ))}
                 </ul>
@@ -110,7 +110,7 @@ const PersonasSection = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 mb-6 max-w-3xl mx-auto">
             Vereinfache Dein Vereinsleben für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
             myclub bietet jedem die passende Lösung.
           </p>
