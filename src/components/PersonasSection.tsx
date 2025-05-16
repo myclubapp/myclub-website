@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 
 const personas = [
   {
@@ -10,9 +10,7 @@ const personas = [
     solutions: [
       "Zentrale Mitgliederverwaltung",
       "Automatisierte Helfer-Punkteverwaltung",
-      "Integrierte Abrechnungssysteme",
-      "Compliance mit Eltern-Kind-Beziehungen",
-      "Echtzeit-Übersicht über alle Teams"
+      "Integrierte Abrechnungssysteme"
     ],
     color: "blue"
   },
@@ -23,11 +21,9 @@ const personas = [
     solutions: [
       "Digitale Trainingsplanung",
       "Automatische Teilnehmer-Kommunikation",
-      "Übungssammlung und -verwaltung",
-      "Schnelle An-/Abmeldungsverwaltung",
-      "Mobile Zugriff auf Spielerdaten"
+      "Schnelle An-/Abmeldungsverwaltung"
     ],
-    color: "purple" // Changed from green to purple to use the secondary color
+    color: "purple"
   },
   {
     icon: "⚽",
@@ -36,9 +32,7 @@ const personas = [
     solutions: [
       "Push-Benachrichtigungen für alle Events",
       "Einfache An-/Abmeldung per Klick",
-      "Persönlicher Trainingskalender",
-      "Team-News direkt aufs Handy",
-      "Eigene Helfer-Punkte einsehen"
+      "Persönlicher Trainingskalender"
     ],
     color: "red"
   },
@@ -49,9 +43,7 @@ const personas = [
     solutions: [
       "Verknüpfung mit Kinderprofilen",
       "Übersicht über alle Termine",
-      "Helfer-Einsätze planen",
-      "Direkte Kommunikation mit Trainern",
-      "Transparente Helfer-Punkte"
+      "Direkte Kommunikation mit Trainern"
     ],
     color: "yellow"
   }
@@ -59,17 +51,17 @@ const personas = [
 
 const PersonasSection = () => {
   return (
-    <section id="für-wen" className="section bg-black">
+    <section id="für-wen" className="section bg-black py-20">
       <div className="container-custom">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Die richtige Lösung für alle</h2>
-          <p className="text-lg text-gray-300">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Die richtige Lösung für alle</h2>
+          <p className="text-lg text-gray-300 mb-10">
             Myclub wurde entwickelt, um die spezifischen Probleme und Herausforderungen
             jeder Person im Vereinsumfeld zu lösen.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {personas.map((persona, index) => {
             // Map the color names to the new tailwind classes
             const borderColorClass = 
@@ -78,39 +70,32 @@ const PersonasSection = () => {
               persona.color === "red" ? "border-myclub-red" :
               "border-myclub-yellow";
             
-            const dotColorClass =
-              persona.color === "blue" ? "bg-myclub-blue" :
-              persona.color === "purple" ? "bg-myclub-purple" :
-              persona.color === "red" ? "bg-myclub-red" :
-              "bg-myclub-yellow";
-            
             return (
-              <div 
+              <Card 
                 key={index}
-                className={`bg-gray-900/70 backdrop-blur-sm rounded-xl border border-white/10 p-8 border-t-4 ${borderColorClass}`}
+                className={`bg-gray-900/50 border-t-4 ${borderColorClass} hover:bg-gray-900/70 transition-colors`}
               >
-                <div className="text-4xl mb-4">{persona.icon}</div>
-                <h3 className="text-2xl font-bold mb-2 text-white">{persona.title}</h3>
-                
-                <Badge variant="outline" className="mb-5 font-normal text-sm bg-black/30 text-gray-300 border-gray-700">
-                  Problem: {persona.problem}
-                </Badge>
-                
-                <ul className="space-y-3">
-                  {persona.solutions.map((solution, idx) => (
-                    <li key={idx} className="flex items-center">
-                      <div className={`w-2 h-2 rounded-full ${dotColorClass} mr-3`}></div>
-                      <span className="text-gray-300">{solution}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">{persona.icon}</div>
+                  <h3 className="text-xl font-bold mb-2 text-white">{persona.title}</h3>
+                  <p className="text-sm text-gray-400 mb-4">Problem: {persona.problem}</p>
+                  
+                  <ul className="space-y-2">
+                    {persona.solutions.map((solution, idx) => (
+                      <li key={idx} className="flex items-center text-gray-300 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-gray-500 mr-2"></div>
+                        {solution}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             );
           })}
         </div>
         
-        <div className="mt-16 text-center">
-          <p className="text-lg text-gray-300 mb-6 max-w-3xl mx-auto">
+        <div className="mt-14 text-center">
+          <p className="text-gray-300 mb-6 max-w-3xl mx-auto">
             Vereinfache Dein Vereinsleben für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
             myclub bietet jedem die passende Lösung.
           </p>
