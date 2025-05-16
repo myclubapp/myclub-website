@@ -73,9 +73,10 @@ const Footer = () => {
               © {new Date().getFullYear()} myclub. Alle Rechte vorbehalten.
             </p>
             <div className="flex space-x-6">
-              <Link to="/terms-and-conditions-de" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Datenschutz</Link>
+              <Link to="/privacy-policy-de" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Datenschutz</Link>
               <Link to="/terms-and-conditions-de" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">AGB</Link>
               <Link to="/terms-and-conditions" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Terms & Conditions</Link>
+              <Link to="/privacy-policy" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Privacy Policy</Link>
               <a href="#" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Impressum</a>
             </div>
           </div>
