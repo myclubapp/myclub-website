@@ -1,19 +1,16 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Logo from './Logo';
-
 const HeroSection = () => {
-  return (
-    <section className="relative bg-gradient-to-br from-gray-900 to-black pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+  return <section className="relative bg-gradient-to-br from-gray-900 to-black pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background Decoration Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute top-10 right-10 w-64 h-64 bg-myclub-blue/20 rounded-full blur-xl animate-float"></div>
         <div className="absolute bottom-10 left-20 w-80 h-80 bg-myclub-purple/10 rounded-full blur-xl"></div>
         <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-myclub-blue/15 rounded-full blur-lg animate-float" style={{
-          animationDelay: '1s'
-        }}></div>
+        animationDelay: '1s'
+      }}></div>
       </div>
       
       <div className="container-custom relative z-10">
@@ -36,10 +33,10 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
-            <div className="relative bg-black/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl animate-fade-in">
+            <div className="relative backdrop-blur-sm p-8 shadow-xl animate-fade-in rounded-none bg-transparent">
               <div className="w-full h-full relative">
                 <img src="/lovable-uploads/fc9ae91f-40f5-4416-9e8c-6b14e2305ae2.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
-                <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent rounded-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent rounded-none bg-transparent"></div>
               </div>
             </div>
             <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
@@ -53,8 +50,6 @@ const HeroSection = () => {
           <path fillOpacity="1" d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,85.3C672,96,768,96,864,80C960,64,1056,32,1152,26.7C1248,21,1344,43,1392,53.3L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
