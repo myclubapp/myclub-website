@@ -73,7 +73,7 @@ const HeroSection = () => {
                       <img 
                         src={screenshot.src} 
                         alt={screenshot.alt} 
-                        className="w-auto h-auto max-w-full max-h-[66%] mx-auto object-contain" 
+                        className="w-[300px] h-auto max-h-[300px] mx-auto object-contain" 
                       />
                     </div>
                   </CarouselItem>)}
@@ -93,3 +93,4 @@ const HeroSection = () => {
     </section>;
 };
 export default HeroSection;
+
