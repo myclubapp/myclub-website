@@ -198,13 +198,13 @@ const PricingSection = () => {
                 </CardContent>
                 
                 <CardFooter>
-                  <Button 
+                 {/*<Button 
                     variant={plan.ctaVariant as "default" | "outline"} 
                     className={`w-full ${plan.popular ? 'bg-myclub-purple hover:bg-myclub-darkpurple text-white' : 
                       plan.ctaVariant === "outline" ? 'border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white' : ''}`}
                   >
                     {plan.cta}
-                  </Button>
+                  </Button> */}
                 </CardFooter>
               </Card>
             ))}
@@ -238,12 +238,12 @@ const PricingSection = () => {
                 </CardContent>
                 
                 <CardFooter>
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     className="w-full border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white"
                   >
                     Hinzufügen
-                  </Button>
+                  </Button> */}
                 </CardFooter>
               </Card>
             ))}
