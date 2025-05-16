@@ -114,26 +114,26 @@ const PricingSection = () => {
   const [isYearly, setIsYearly] = useState(false);
   
   return (
-    <section id="preise" className="section bg-white py-20">
+    <section id="preise" className="section bg-black py-20">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Transparente Preisgestaltung</h2>
-          <p className="text-lg text-gray-600 mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Transparente Preisgestaltung</h2>
+          <p className="text-lg text-gray-300 mb-10">
             Wählen Sie den passenden Plan für Ihren Verein. Alle Pläne beinhalten 
             eine 30-tägige kostenlose Testphase.
           </p>
           
           <div className="flex items-center justify-center mb-12">
-            <div className="bg-gray-100 p-1 rounded-full inline-flex">
+            <div className="bg-gray-800 p-1 rounded-full inline-flex">
               <button 
                 onClick={() => setIsYearly(false)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${!isYearly ? 'bg-white shadow-sm text-myclub-blue' : 'text-gray-600'}`}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${!isYearly ? 'bg-myclub-blue text-white' : 'text-gray-400 hover:text-white'}`}
               >
                 Monatlich
               </button>
               <button 
                 onClick={() => setIsYearly(true)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${isYearly ? 'bg-white shadow-sm text-myclub-blue' : 'text-gray-600'}`}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${isYearly ? 'bg-myclub-blue text-white' : 'text-gray-400 hover:text-white'}`}
               >
                 Jährlich
               </button>
@@ -143,12 +143,12 @@ const PricingSection = () => {
         
         {/* Basis-Abos */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Basis-Abos</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-white">Basis-Abos</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {plans.map((plan, index) => (
               <div 
                 key={index}
-                className={`rounded-2xl border ${plan.popular ? 'border-myclub-purple shadow-lg shadow-myclub-purple/5' : 'border-gray-200'} p-8 relative`}
+                className={`rounded-2xl border ${plan.popular ? 'border-myclub-purple' : 'border-gray-800'} bg-gray-900/60 backdrop-blur-sm p-8 relative ${plan.popular ? 'shadow-lg shadow-myclub-purple/10' : ''}`}
               >
                 {plan.popular && (
                   <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-myclub-purple text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -158,15 +158,15 @@ const PricingSection = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <Badge className={`${plan.color} mb-3`}>{plan.badge}</Badge>
-                    <h3 className="text-xl font-bold">{plan.name}</h3>
+                    <h3 className="text-xl font-bold text-white">{plan.name}</h3>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6">{plan.description}</p>
+                <p className="text-gray-400 mb-6">{plan.description}</p>
                 
                 <div className="mb-6">
-                  <span className="text-3xl font-bold">CHF {plan.name === "myclub | FREE" ? "0.00" : isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
+                  <span className="text-3xl font-bold text-white">CHF {plan.name === "myclub | FREE" ? "0.00" : isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
                   {plan.name !== "myclub | FREE" && (
-                    <span className="text-gray-600">/{isYearly ? 'Jahr' : 'Monat'}</span>
+                    <span className="text-gray-400">/{isYearly ? 'Jahr' : 'Monat'}</span>
                   )}
                   {isYearly && plan.name !== "myclub | FREE" && <p className="text-sm text-myclub-green mt-1">Jährliche Abrechnung</p>}
                 </div>
@@ -175,7 +175,7 @@ const PricingSection = () => {
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -194,20 +194,20 @@ const PricingSection = () => {
         
         {/* Zusatzmodule */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Zusatzmodule (für alle Abos verfügbar)</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-white">Zusatzmodule (für alle Abos verfügbar)</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {additionalModules.map((module, index) => (
-              <div key={index} className="rounded-2xl border border-gray-200 p-8 hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold mb-4">{module.name}</h3>
+              <div key={index} className="rounded-2xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm p-8 hover:border-myclub-blue/50 transition-all">
+                <h3 className="text-xl font-bold mb-4 text-white">{module.name}</h3>
                 <div className="mb-6">
-                  <span className="text-2xl font-bold">CHF {module.price}</span>
-                  <span className="text-gray-600">/Monat</span>
+                  <span className="text-2xl font-bold text-white">CHF {module.price}</span>
+                  <span className="text-gray-400">/Monat</span>
                 </div>
                 <ul className="space-y-4 mb-8">
                   {module.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -222,9 +222,9 @@ const PricingSection = () => {
           </div>
         </div>
         
-        <div className="mt-16 text-center bg-gray-50 p-8 rounded-xl">
-          <h3 className="text-xl font-bold mb-4">Benötigen Sie eine individuelle Lösung?</h3>
-          <p className="text-gray-600 mb-6">
+        <div className="mt-16 text-center bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl border border-gray-800">
+          <h3 className="text-xl font-bold mb-4 text-white">Benötigen Sie eine individuelle Lösung?</h3>
+          <p className="text-gray-300 mb-6">
             Kontaktieren Sie uns für maßgeschneiderte Pakete, die genau auf die Bedürfnisse 
             Ihres Vereins zugeschnitten sind.
           </p>
