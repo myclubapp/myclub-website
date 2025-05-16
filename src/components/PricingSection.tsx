@@ -3,6 +3,15 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
+// Common features for all plans
+const commonFeatures = [
+  "Mitgliederverwaltung",
+  "Unlimitierte Teams",
+  "Unlimitierte Trainings",
+  "Unlimitierte Veranstaltungen"
+];
 
 const plans = [
   {
@@ -11,15 +20,12 @@ const plans = [
     monthlyPrice: "0.00",
     yearlyPrice: "0.00",
     features: [
-      "Mitgliederverwaltung",
-      "Unlimitierte Teams",
-      "Unlimitierte Trainings",
-      "Unlimitierte Veranstaltungen"
+      "Basis-Support"
     ],
     cta: "Kostenlos starten",
     ctaVariant: "outline",
     popular: false,
-    color: "bg-gray-100 text-gray-800",
+    color: "border-gray-800 bg-gray-900/60",
     badge: "🆓"
   },
   {
@@ -28,13 +34,12 @@ const plans = [
     monthlyPrice: "7.90",
     yearlyPrice: "79.00",
     features: [
-      "Alle FREE Features",
-     
+      "E-Mail Support"
     ],
     cta: "Jetzt starten",
     ctaVariant: "outline",
     popular: false,
-    color: "bg-myclub-green text-white",
+    color: "border-green-800/40 bg-gray-900/60",
     badge: "🟢"
   },
   {
@@ -43,7 +48,6 @@ const plans = [
     monthlyPrice: "14.90",
     yearlyPrice: "149.00",
     features: [
-      "Alle STARTER Features",
       "Priority Support",
       "Erweiterte Berechtigungen",
       "Chat-Funktion",
@@ -52,7 +56,7 @@ const plans = [
     cta: "Empfohlen",
     ctaVariant: "default",
     popular: true,
-    color: "bg-myclub-blue text-white",
+    color: "border-myclub-blue/40 bg-gray-900/60",
     badge: "🔵"
   },
   {
@@ -61,7 +65,6 @@ const plans = [
     monthlyPrice: "24.90",
     yearlyPrice: "249.00",
     features: [
-      "Alle STANDARD Features",
       "Dedizierter Support",
       "Custom Branding",
       "API-Zugriff",
@@ -70,7 +73,7 @@ const plans = [
     cta: "Kontaktieren",
     ctaVariant: "outline",
     popular: false,
-    color: "bg-myclub-purple text-white",
+    color: "border-myclub-purple/40 bg-gray-900/60",
     badge: "🟣"
   }
 ];
@@ -140,50 +143,75 @@ const PricingSection = () => {
         {/* Basis-Abos */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8 text-white">Basis-Abos</h3>
+          
+          {/* Common features section */}
+          <div className="mb-10 p-6 border border-gray-800 backdrop-blur-sm bg-gray-900/30 rounded-2xl">
+            <h4 className="text-xl font-bold mb-6 text-center text-white">Alle Abos beinhalten</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {commonFeatures.map((feature, idx) => (
+                <div key={idx} className="flex items-center space-x-3 justify-center">
+                  <Check className="h-5 w-5 text-myclub-green flex-shrink-0" />
+                  <span className="text-gray-300">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Pricing cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {plans.map((plan, index) => (
-              <div 
+              <Card 
                 key={index}
-                className={`rounded-2xl border ${plan.popular ? 'border-myclub-purple' : 'border-gray-800'} bg-gray-900/60 backdrop-blur-sm p-8 relative ${plan.popular ? 'shadow-lg shadow-myclub-purple/10' : ''}`}
+                className={`border ${plan.popular ? 'ring-2 ring-myclub-purple ring-offset-black' : ''} ${plan.color} backdrop-blur-sm relative overflow-hidden`}
               >
                 {plan.popular && (
-                  <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-myclub-purple text-white text-xs font-bold px-3 py-1 rounded-full">
-                    Beliebt
-                  </span>
-                )}
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    {/* <Badge className={`${plan.color} mb-3`}>{plan.badge}</Badge> */}
-                    <h3 className="text-xl font-bold text-white">{plan.name}</h3>
+                  <div className="absolute top-0 right-0">
+                    <div className="bg-myclub-purple text-white text-xs font-bold px-8 py-1 rotate-45 translate-x-6 translate-y-3">
+                      Beliebt
+                    </div>
                   </div>
-                </div>
-                <p className="text-gray-400 mb-6">{plan.description}</p>
+                )}
                 
-                <div className="mb-6">
-                  <span className="text-3xl font-bold text-white">CHF {plan.name === "myclub | FREE" ? "0.00" : isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
-                  {plan.name !== "myclub | FREE" && (
-                    <span className="text-gray-400">/{isYearly ? 'Jahr' : 'Monat'}</span>
+                <CardHeader>
+                  <Badge className="w-fit mb-2">{plan.badge}</Badge>
+                  <CardTitle className="text-white">{plan.name}</CardTitle>
+                  <CardDescription className="text-gray-400">{plan.description}</CardDescription>
+                </CardHeader>
+                
+                <CardContent className="space-y-6">
+                  <div>
+                    <span className="text-3xl font-bold text-white">CHF {plan.name === "myclub | FREE" ? "0.00" : isYearly ? plan.yearlyPrice : plan.monthlyPrice}</span>
+                    {plan.name !== "myclub | FREE" && (
+                      <span className="text-gray-400">/{isYearly ? 'Jahr' : 'Monat'}</span>
+                    )}
+                    {isYearly && plan.name !== "myclub | FREE" && <p className="text-sm text-myclub-green mt-1">Jährliche Abrechnung</p>}
+                  </div>
+                  
+                  {plan.features.length > 0 && (
+                    <div>
+                      <p className="text-sm font-medium text-gray-400 mb-3">Zusätzliche Features:</p>
+                      <ul className="space-y-3">
+                        {plan.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start">
+                            <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
+                            <span className="text-gray-300">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
-                  {isYearly && plan.name !== "myclub | FREE" && <p className="text-sm text-myclub-green mt-1">Jährliche Abrechnung</p>}
-                </div>
+                </CardContent>
                 
-                <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <Button 
-                  variant={plan.ctaVariant as "default" | "outline"} 
-                  className={`w-full ${plan.popular ? 'bg-myclub-purple hover:bg-myclub-darkpurple text-white' : 
-                    plan.ctaVariant === "outline" ? 'border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white' : ''}`}
-                >
-                  {plan.cta}
-                </Button>
-              </div>
+                <CardFooter>
+                  <Button 
+                    variant={plan.ctaVariant as "default" | "outline"} 
+                    className={`w-full ${plan.popular ? 'bg-myclub-purple hover:bg-myclub-darkpurple text-white' : 
+                      plan.ctaVariant === "outline" ? 'border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white' : ''}`}
+                  >
+                    {plan.cta}
+                  </Button>
+                </CardFooter>
+              </Card>
             ))}
           </div>
         </div>
@@ -193,27 +221,36 @@ const PricingSection = () => {
           <h3 className="text-2xl font-bold text-center mb-8 text-white">Zusatzmodule (für alle Abos verfügbar)</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {additionalModules.map((module, index) => (
-              <div key={index} className="rounded-2xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm p-8 hover:border-myclub-blue/50 transition-all">
-                <h3 className="text-xl font-bold mb-4 text-white">{module.name}</h3>
-                <div className="mb-6">
-                  <span className="text-2xl font-bold text-white">CHF {module.price}</span>
-                  <span className="text-gray-400">/Monat</span>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  {module.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white"
-                >
-                  Hinzufügen
-                </Button>
-              </div>
+              <Card key={index} className="border border-gray-800 bg-gray-900/60 backdrop-blur-sm hover:border-myclub-blue/50 transition-all">
+                <CardHeader>
+                  <CardTitle className="text-white">{module.name}</CardTitle>
+                </CardHeader>
+                
+                <CardContent className="space-y-6">
+                  <div>
+                    <span className="text-2xl font-bold text-white">CHF {module.price}</span>
+                    <span className="text-gray-400">/Monat</span>
+                  </div>
+                  
+                  <ul className="space-y-3">
+                    {module.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-300">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+                
+                <CardFooter>
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white"
+                  >
+                    Hinzufügen
+                  </Button>
+                </CardFooter>
+              </Card>
             ))}
           </div>
         </div>
