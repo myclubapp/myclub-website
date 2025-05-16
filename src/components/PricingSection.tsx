@@ -20,7 +20,7 @@ const plans = [
     monthlyPrice: "0.00",
     yearlyPrice: "0.00",
     features: [
-      "Basis-Support"
+
     ],
     cta: "Kostenlos starten",
     ctaVariant: "outline",
@@ -34,7 +34,7 @@ const plans = [
     monthlyPrice: "7.90",
     yearlyPrice: "79.00",
     features: [
-      "E-Mail Support"
+
     ],
     cta: "Jetzt starten",
     ctaVariant: "outline",
@@ -48,10 +48,7 @@ const plans = [
     monthlyPrice: "14.90",
     yearlyPrice: "149.00",
     features: [
-      "Priority Support",
-      "Erweiterte Berechtigungen",
-      "Chat-Funktion",
-      "Zahlungsverwaltung"
+
     ],
     cta: "Empfohlen",
     ctaVariant: "default",
@@ -65,10 +62,7 @@ const plans = [
     monthlyPrice: "24.90",
     yearlyPrice: "249.00",
     features: [
-      "Dedizierter Support",
-      "Custom Branding",
-      "API-Zugriff",
-      "Vollständiges Reporting"
+
     ],
     cta: "Kontaktieren",
     ctaVariant: "outline",
