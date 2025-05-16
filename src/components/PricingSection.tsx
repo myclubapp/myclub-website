@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
@@ -10,13 +9,16 @@ const commonFeatures = [
   "Mitgliederverwaltung",
   "Unlimitierte Teams",
   "Unlimitierte Trainings",
-  "Unlimitierte Veranstaltungen"
+  "Unlimitierte Veranstaltungen",
+  "Wordpress Integration",
+  "E-Mail Support",
+  "Push-Benachrichtigungen",
 ];
 
 const plans = [
   {
     name: "myclub | FREE",
-    description: "Für Vereine bis 25 Mitglieder",
+    description: "Für Vereine bis 20 Mitglieder",
     monthlyPrice: "0.00",
     yearlyPrice: "0.00",
     features: [
@@ -30,9 +32,9 @@ const plans = [
   },
   {
     name: "myclub | STARTER",
-    description: "Für Vereine 26-75 Mitglieder",
-    monthlyPrice: "7.90",
-    yearlyPrice: "79.00",
+    description: "Für Vereine ab 20-79 Mitglieder",
+    monthlyPrice: "6.90",
+    yearlyPrice: "69.00",
     features: [
 
     ],
@@ -44,9 +46,9 @@ const plans = [
   },
   {
     name: "myclub | STANDARD",
-    description: "Für Vereine 76-200 Mitglieder",
-    monthlyPrice: "14.90",
-    yearlyPrice: "149.00",
+    description: "Für Vereine ab 80-199 Mitglieder",
+    monthlyPrice: "12.90",
+    yearlyPrice: "129.00",
     features: [
 
     ],
@@ -58,7 +60,7 @@ const plans = [
   },
   {
     name: "myclub | PREMIUM",
-    description: "Für Vereine ab 201 Mitglieder",
+    description: "Für Vereine ab 200 Mitglieder",
     monthlyPrice: "24.90",
     yearlyPrice: "249.00",
     features: [
@@ -111,8 +113,8 @@ const PricingSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Transparente Preisgestaltung</h2>
           <p className="text-lg text-gray-300 mb-10">
-            Wählen Sie den passenden Plan für Ihren Verein. Alle Pläne beinhalten 
-            eine 30-tägige kostenlose Testphase.
+            Finde den passenden Plan für deinen Verein. Alle Pläne beinhalten 
+            eine 30-tägige kostenlose Testphase ohne Verpflichtungen.
           </p>
           
           <div className="flex items-center justify-center mb-12">
@@ -139,7 +141,7 @@ const PricingSection = () => {
           
           {/* Common features section */}
           <div className="mb-10 p-6 border border-gray-800 backdrop-blur-sm bg-gray-900/30 rounded-2xl">
-            <h4 className="text-xl font-bold mb-6 text-center text-white">Alle Abos beinhalten</h4>
+            <h4 className="text-xl font-bold mb-6 text-center text-white">In allen Abos enthalten</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {commonFeatures.map((feature, idx) => (
                 <div key={idx} className="flex items-center space-x-3 justify-center">
@@ -249,10 +251,10 @@ const PricingSection = () => {
         </div>
         
         <div className="mt-16 text-center bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl border border-gray-800">
-          <h3 className="text-xl font-bold mb-4 text-white">Benötigen Sie eine individuelle Lösung?</h3>
+          <h3 className="text-xl font-bold mb-4 text-white">Benötigst du eine individuelle Lösung?</h3>
           <p className="text-gray-300 mb-6">
-            Kontaktieren Sie uns für maßgeschneiderte Pakete, die genau auf die Bedürfnisse 
-            Ihres Vereins zugeschnitten sind.
+            Kontaktiere uns für maßgeschneiderte Pakete, die perfekt auf die Anforderungen 
+            deines Vereins abgestimmt sind.
           </p>
           <Button variant="outline" className="border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white">
             Kontakt aufnehmen

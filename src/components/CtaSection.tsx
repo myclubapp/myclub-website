@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -18,11 +17,11 @@ const CtaSection = () => {
             <Logo variant="light" size="md" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Bereit, Deinen Verein zu digitalisieren?
+            Bereit für die digitale Transformation deines Vereins?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-10">
-            Starte Deine 30-tägige kostenlose Testphase und entdecke, wie myclub 
-            Dein Vereinsleben transformieren kann.
+            Starte deine 30-tägige kostenlose Testphase und erlebe, wie myclub 
+            dein Vereinsmanagement revolutioniert.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +35,7 @@ const CtaSection = () => {
           </div>
           
           <p className="mt-8 text-gray-400">
-            Schließe Dich über 500+ Vereinen an, die bereits mit myclub arbeiten
+            Schließe dich über 500+ Vereinen an, die bereits mit myclub erfolgreich arbeiten
           </p>
         </div>
       </div>

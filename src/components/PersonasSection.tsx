@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -54,10 +53,10 @@ const PersonasSection = () => {
     <section id="für-wen" className="section bg-black py-20">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Die richtige Lösung für alle</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Die perfekte Lösung für jeden im Verein</h2>
           <p className="text-lg text-gray-300 mb-10">
-            Myclub wurde entwickelt, um die spezifischen Probleme und Herausforderungen
-            jeder Person im Vereinsumfeld zu lösen.
+            Entdecke, wie myclub die spezifischen Herausforderungen jeder Person 
+            im Vereinsumfeld optimal adressiert.
           </p>
         </div>
         
@@ -96,8 +95,8 @@ const PersonasSection = () => {
         
         <div className="mt-14 text-center">
           <p className="text-gray-300 mb-6 max-w-3xl mx-auto">
-            Vereinfache Dein Vereinsleben für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
-            myclub bietet jedem die passende Lösung.
+            Optimiere dein Vereinsmanagement für alle Beteiligten. Vom Vorstand bis zum Elternteil - 
+            myclub bietet jedem die passende Lösung für ein effizientes Vereinsleben.
           </p>
           <a href="#" className="btn btn-primary">
             Für Deinen Verein testen

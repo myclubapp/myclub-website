@@ -31,7 +31,8 @@ const AppFeaturesSection = () => {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Funktionen im Detail</h2>
           <p className="text-lg text-gray-300">
-            Entdecke alle Funktionen der myclub App, die dein Vereinsleben einfacher und effizienter machen.
+            Entdecke die umfassenden Funktionen der myclub App, die dein Vereinsmanagement 
+            auf ein neues Level heben.
           </p>
         </div>
         

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 
@@ -11,20 +10,23 @@ const MissionSection = () => {
             <Badge className="bg-myclub-blue/20 text-myclub-blue border-none mb-4 px-3 py-1">
               Über myclub
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Unsere Vision für den Breitensport</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Unsere Vision für den modernen Sportverein</h2>
             
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold mb-2 text-white">Mission</h3>
                 <p className="text-gray-300">
-                  Wir digitalisieren die Vereinsverwaltung im Breitensport und machen das Vereinsleben 
-                  für alle Beteiligten einfacher, transparenter und effizienter.
+                  Wir revolutionieren die Vereinsverwaltung im Breitensport durch innovative digitale Lösungen, 
+                  die das Vereinsleben für alle Beteiligten effizienter und transparenter gestalten.
                 </p>
               </div>
               
               <div>
                 <h3 className="text-xl font-bold mb-2 text-white">Vision</h3>
-                <p className="text-gray-300">myclub wird die führende digitale Plattform für Sportvereine, die Verwaltung, Kommunikation und Organisation nahtlos vereint.</p>
+                <p className="text-gray-300">
+                  Als führende digitale Plattform für Sportvereine verbinden wir Verwaltung, 
+                  Kommunikation und Organisation in einer nahtlosen Lösung.
+                </p>
               </div>
               
               <div>
@@ -36,19 +38,19 @@ const MissionSection = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">2.</span>
-                    <span><strong className="text-myclub-blue">Mobile First:</strong> Volle Funktionalität auf allen Geräten</span>
+                    <span><strong className="text-myclub-blue">Mobile First:</strong> Optimale Nutzung auf allen Endgeräten</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">3.</span>
-                    <span><strong className="text-myclub-blue">Integration:</strong> Nahtlose Verbindung mit Verbandssystemen</span>
+                    <span><strong className="text-myclub-blue">Integration:</strong> Nahtlose Anbindung an Verbandssysteme</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">4.</span>
-                    <span><strong className="text-myclub-blue">Wachstum:</strong> Modularer Aufbau für unterschiedliche Vereinsgrößen</span>
+                    <span><strong className="text-myclub-blue">Skalierbarkeit:</strong> Flexible Lösungen für Vereine jeder Größe</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">5.</span>
-                    <span><strong className="text-myclub-blue">Community:</strong> Starke Bindung zwischen Verein und Mitgliedern</span>
+                    <span><strong className="text-myclub-blue">Community:</strong> Stärkung der Vereinsidentität und Mitgliederbindung</span>
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
@@ -13,8 +12,9 @@ const AppPreviewSection = () => {
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Dein Verein in der Hosentasche</h2>
           <p className="text-lg text-gray-300 mb-8">
-            Die myclub App bietet alle Funktionen für Dein Vereinsleben - jederzeit und überall verfügbar.
-            Verwalte Trainings, Events, Spiele und mehr mit nur wenigen Klicks.
+            Die myclub App bietet dir alle Funktionen für dein Vereinsmanagement - 
+            jederzeit und überall verfügbar. Verwalte Trainings, Events, Spiele und mehr 
+            mit nur wenigen Klicks.
           </p>
         </div>
         
@@ -49,7 +49,7 @@ const AppPreviewSection = () => {
         
         <div className="mt-16 text-center">
           <p className="text-gray-300 mb-8">
-            Weitere App-Funktionen: Club Verwaltung, Training Planung, Event Management und mehr
+            Weitere App-Funktionen: Vereinsverwaltung, Trainingsplanung, Event-Management und mehr
           </p>
           <a href="https://init.ly/y9TCYJ" className="btn btn-primary inline-flex items-center">
             App herunterladen
