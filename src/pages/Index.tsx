@@ -18,11 +18,11 @@ const Index = () => {
       <main>
         <HeroSection />
         <AppPreviewSection />
-        <MissionSection />
         {/* <PersonasSection /> */}
         {/* <FeaturesSection /> */}
         {/* <AppFeaturesSection /> */}
         <PricingSection />
+        <MissionSection />
         <CtaSection />
       </main>
       <Footer />

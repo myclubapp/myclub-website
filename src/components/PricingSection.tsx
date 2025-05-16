@@ -14,7 +14,7 @@ const plans = [
       "Mitgliederverwaltung",
       "Unlimitierte Teams",
       "Unlimitierte Trainings",
-      "Veranstaltungen",
+      "Unlimitierte Veranstaltungen",
       "Basis-Support"
     ],
     cta: "Kostenlos starten",
@@ -30,10 +30,7 @@ const plans = [
     yearlyPrice: "79.00",
     features: [
       "Alle FREE Features",
-      "E-Mail Support",
-      "Mobile Apps",
-      "News-System",
-      "Push-Benachrichtigungen"
+      "E-Mail Support"
     ],
     cta: "Jetzt starten",
     ctaVariant: "outline",
