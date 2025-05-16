@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppPreviewSection from "@/components/AppPreviewSection";
 import AppFeaturesSection from "@/components/AppFeaturesSection";
+import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
         <PersonasSection />
         <FeaturesSection />
         <AppFeaturesSection />
+        <PricingSection />
         <CtaSection />
       </main>
       <Footer />

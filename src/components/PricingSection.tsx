@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Check, Calendar, Users, Table, BarChart, FileText, Handshake, Mail, List } from "lucide-react";
+import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const plans = [
@@ -12,15 +12,14 @@ const plans = [
     yearlyPrice: "0.00",
     features: [
       "Mitgliederverwaltung",
-      "Teamverwaltung",
-      "Eltern",
-      "Trainingsplanung",
-      "Veranstaltungen"
+      "Unlimitierte Teams",
+      "Unlimitierte Trainings",
+      "Veranstaltungen",
+      "Basis-Support"
     ],
     cta: "Kostenlos starten",
     ctaVariant: "outline",
     popular: false,
-    coverage: "",
     color: "bg-gray-100 text-gray-800",
     badge: "🆓"
   },
@@ -39,7 +38,6 @@ const plans = [
     cta: "Jetzt starten",
     ctaVariant: "outline",
     popular: false,
-    coverage: "",
     color: "bg-myclub-green text-white",
     badge: "🟢"
   },
@@ -49,16 +47,15 @@ const plans = [
     monthlyPrice: "14.90",
     yearlyPrice: "149.00",
     features: [
-      "Verbands-News",
+      "Alle STARTER Features",
       "Priority Support",
-      "Helfer-Events",
-      "Championship Module",
-      "Erweiterte Berechtigungen"
+      "Erweiterte Berechtigungen",
+      "Chat-Funktion",
+      "Zahlungsverwaltung"
     ],
     cta: "Empfohlen",
     ctaVariant: "default",
     popular: true,
-    coverage: "",
     color: "bg-myclub-blue text-white",
     badge: "🔵"
   },
@@ -70,14 +67,13 @@ const plans = [
     features: [
       "Alle STANDARD Features",
       "Dedizierter Support",
-      "Custom Branding möglich",
+      "Custom Branding",
       "API-Zugriff",
       "Vollständiges Reporting"
     ],
     cta: "Kontaktieren",
     ctaVariant: "outline",
     popular: false,
-    coverage: "",
     color: "bg-myclub-purple text-white",
     badge: "🟣"
   }
@@ -87,34 +83,29 @@ const additionalModules = [
   {
     name: "⚽ Meisterschafts-Modul",
     price: "5.90",
-    color: "bg-myclub-blue",
     features: [
-      { name: "Spielplanung", icon: Calendar },
-      { name: "Aufstellungen", icon: Users },
-      { name: "Resultate & Tabellen", icon: Table },
-      { name: "Spieler-Statistiken", icon: BarChart }
+      "Spielplanung",
+      "Navigation",
+      "Resultate & Tabellen"
     ]
   },
   {
     name: "🤝 Helfer-Modul",
     price: "4.90",
-    color: "bg-myclub-green",
     features: [
-      { name: "Helfer-Events erstellen", icon: Calendar },
-      { name: "Schichtplanung", icon: List },
-      { name: "Punktesystem", icon: BarChart },
-      { name: "Abrechnungen", icon: FileText }
+      "Helfer-Events erstellen",
+      "Schichtplanung",
+      "Punktesystem"
     ]
   },
   {
     name: "📱 Erweiterte Features (Bundle)",
     price: "7.90",
-    color: "bg-myclub-purple",
     features: [
-      { name: "Erweiterte Statistiken", icon: BarChart },
-      { name: "Dokumentenverwaltung", icon: FileText },
-      { name: "Sponsoren-Management", icon: Handshake },
-      { name: "Newsletter-Tool", icon: Mail }
+      "Erweiterte Statistiken",
+      "Dokumentenverwaltung",
+      "Sponsoren-Management",
+      "Newsletter-Tool"
     ]
   }
 ];
@@ -123,7 +114,7 @@ const PricingSection = () => {
   const [isYearly, setIsYearly] = useState(false);
   
   return (
-    <section id="preise" className="section bg-white">
+    <section id="preise" className="section bg-white py-20">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Transparente Preisgestaltung</h2>
@@ -215,8 +206,8 @@ const PricingSection = () => {
                 <ul className="space-y-4 mb-8">
                   {module.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
-                      <feature.icon className={`h-5 w-5 text-myclub-green mr-3 mt-0.5 flex-shrink-0`} />
-                      <span className="text-gray-700">{feature.name}</span>
+                      <Check className="h-5 w-5 text-myclub-green mr-2 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -247,4 +238,3 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
-
