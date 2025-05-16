@@ -21,7 +21,7 @@ const features = [
     title: "Helferpunkte",
     description: "Transparente Verwaltung und Nachverfolgung von Helfereinsätzen und verdienten Punkten.",
     icon: <Shield className="h-6 w-6 text-myclub-green" />,
-    image: "/lovable-uploads/9809a9ff-22cf-4db6-bb2f-47f73de9b538.png",
+    image: "/lovable-uploads/5cbca357-36ad-47d1-86f0-1748abe1f90f.png",
     alt: "Helper Points"
   },
   {
