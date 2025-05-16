@@ -1,36 +1,23 @@
-
 import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Logo from './Logo';
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 // Define our app screenshots
-const appScreenshots = [
-  {
-    src: "/lovable-uploads/3a6ce75e-225b-419d-a32f-906cc5d7a14c.png",
-    alt: "Spielübersicht mit Standort"
-  },
-  {
-    src: "/lovable-uploads/bd06a942-297e-48dd-8762-a3b95cdd51cf.png",
-    alt: "Vereinsnews und Bekleidung"
-  },
-  {
-    src: "/lovable-uploads/dd2da1f8-31f0-4655-aae9-6e51595ecc14.png",
-    alt: "Mitgliederverwaltung"
-  },
-  {
-    src: "/lovable-uploads/de01d352-eec0-4836-8e6e-2f8607c1479f.png",
-    alt: "Helferevent-Management"
-  }
-];
-
+const appScreenshots = [{
+  src: "/lovable-uploads/3a6ce75e-225b-419d-a32f-906cc5d7a14c.png",
+  alt: "Spielübersicht mit Standort"
+}, {
+  src: "/lovable-uploads/bd06a942-297e-48dd-8762-a3b95cdd51cf.png",
+  alt: "Vereinsnews und Bekleidung"
+}, {
+  src: "/lovable-uploads/dd2da1f8-31f0-4655-aae9-6e51595ecc14.png",
+  alt: "Mitgliederverwaltung"
+}, {
+  src: "/lovable-uploads/de01d352-eec0-4836-8e6e-2f8607c1479f.png",
+  alt: "Helferevent-Management"
+}];
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,10 +26,8 @@ const HeroSection = () => {
     const interval = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % appScreenshots.length);
     }, 3000);
-    
     return () => clearInterval(interval);
   }, []);
-
   return <section className="relative bg-gradient-to-br from-gray-900 to-black pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background Decoration Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -73,30 +58,22 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
-            <Carousel 
-              className="w-auto h-auto relative overflow-hidden"
-              opts={{ loop: true, align: "center" }}
-              orientation="horizontal"
-              setApi={(api) => {
-                if (api && api.scrollTo) {
-                  api.scrollTo(currentIndex);
-                }
-              }}
-            >
+            <Carousel className="w-auto h-auto relative overflow-hidden" opts={{
+            loop: true,
+            align: "center"
+          }} orientation="horizontal" setApi={api => {
+            if (api && api.scrollTo) {
+              api.scrollTo(currentIndex);
+            }
+          }}>
               <CarouselContent>
-                {appScreenshots.map((screenshot, index) => (
-                  <CarouselItem key={index} className="flex items-center justify-center">
+                {appScreenshots.map((screenshot, index) => <CarouselItem key={index} className="flex items-center justify-center">
                     <div className="w-auto h-auto relative">
                       <div className="phone-frame bg-black rounded-[40px] border-8 border-gray-800 shadow-xl overflow-hidden transform transition-transform">
-                        <img 
-                          src={screenshot.src} 
-                          alt={screenshot.alt} 
-                          className="w-auto h-auto max-w-full object-contain mx-auto"
-                        />
+                        <img src={screenshot.src} alt={screenshot.alt} className="w-auto h-auto max-w-full mx-auto object-scale-down" />
                       </div>
                     </div>
-                  </CarouselItem>
-                ))}
+                  </CarouselItem>)}
               </CarouselContent>
             </Carousel>
             <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
