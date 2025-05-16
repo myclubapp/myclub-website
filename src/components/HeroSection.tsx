@@ -36,7 +36,7 @@ const HeroSection = () => {
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
-            <div className="relative bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 shadow-xl animate-fade-in">
+            <div className="relative bg-black/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl animate-fade-in">
               <div className="w-full h-full relative">
                 <img src="/lovable-uploads/fc9ae91f-40f5-4416-9e8c-6b14e2305ae2.png" alt="myclub App" className="w-auto h-auto max-w-full object-contain mx-auto" />
                 <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent rounded-xl"></div>
