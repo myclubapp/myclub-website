@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
@@ -19,8 +20,8 @@ const AppPreviewSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6">
           {/* App Preview 1 - Match Details */}
-          <div className="flex justify-center phone-container">
-            <div className="phone-mockup w-64 h-[500px] animate-phone-slide" style={{
+          <div className="flex justify-center">
+            <div className="w-64 h-auto rounded-lg overflow-hidden shadow-xl animate-phone-slide" style={{
             animationDelay: '0.1s'
           }}>
               <img alt="Match Details" className="w-full h-full object-cover" src="/lovable-uploads/96a44b63-64ee-4aab-8a47-fa8618da0ae7.png" />
@@ -28,8 +29,8 @@ const AppPreviewSection = () => {
           </div>
           
           {/* App Preview 2 - News */}
-          <div className="flex justify-center phone-container">
-            <div className="phone-mockup w-64 h-[500px] animate-phone-slide" style={{
+          <div className="flex justify-center">
+            <div className="w-64 h-auto rounded-lg overflow-hidden shadow-xl animate-phone-slide" style={{
             animationDelay: '0.3s'
           }}>
               <img alt="Club News" className="w-full h-full object-cover" src="/lovable-uploads/edf0e6fd-25bd-4a4c-a322-02c02120a859.png" />
@@ -37,8 +38,8 @@ const AppPreviewSection = () => {
           </div>
           
           {/* App Preview 3 - Helper Events */}
-          <div className="hidden lg:flex justify-center phone-container">
-            <div className="phone-mockup w-64 h-[500px] animate-phone-slide" style={{
+          <div className="hidden lg:flex justify-center">
+            <div className="w-64 h-auto rounded-lg overflow-hidden shadow-xl animate-phone-slide" style={{
             animationDelay: '0.5s'
           }}>
               <img alt="Helper Events" className="w-full h-full object-cover" src="/lovable-uploads/e24f8831-92b9-4607-b238-0b374a12f307.png" />
