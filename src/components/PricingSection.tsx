@@ -253,7 +253,7 @@ const PricingSection = () => {
         <div className="mt-16 text-center bg-gray-900/60 backdrop-blur-sm p-8 rounded-xl border border-gray-800">
           <h3 className="text-xl font-bold mb-4 text-white">Benötigst du eine individuelle Lösung?</h3>
           <p className="text-gray-300 mb-6">
-            Kontaktiere uns für maßgeschneiderte Pakete, die perfekt auf die Anforderungen 
+            Kontaktiere uns für massgeschneiderte Pakete, die perfekt auf die Anforderungen 
             deines Vereins abgestimmt sind.
           </p>
           <Button variant="outline" className="border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white">

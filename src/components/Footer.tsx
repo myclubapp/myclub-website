@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">myclub</h3>
             <p className="text-gray-400 mb-4">
-              Die All-in-One Plattform für Sportvereine. Einfacher. Transparenter. Effizienter.
+              Erlebe die Zukunft der Vereinsarbeit. Digital, effizient und intuitiv - für ein modernes Vereinsleben.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-myclub-blue transition-colors">
@@ -39,12 +39,12 @@ const Footer = () => {
               <li><a href="#features" className="text-gray-400 hover:text-myclub-blue transition-colors">Features</a></li>
               <li><a href="#für-wen" className="text-gray-400 hover:text-myclub-blue transition-colors">Für wen</a></li>
               <li><a href="#preise" className="text-gray-400 hover:text-myclub-blue transition-colors">Preise</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Roadmap</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Release Notes</a></li>
+              {/*  <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Roadmap</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Release Notes</a></li>  */}
             </ul>
           </div>
           
-          <div>
+         {/* <div>
             <h3 className="text-lg font-semibold mb-4">Ressourcen</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Dokumentation</a></li>
@@ -53,14 +53,14 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Community</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Partner</a></li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Unternehmen</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Über uns</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Über uns</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Karriere</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Kontakt</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Kontakt</a></li> */}
               <li><Link to="/impressum" className="text-gray-400 hover:text-myclub-blue transition-colors">Impressum</Link></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Datenschutz</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">AGB</a></li>

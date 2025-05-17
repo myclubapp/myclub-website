@@ -46,7 +46,7 @@ const MissionSection = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">4.</span>
-                    <span><strong className="text-myclub-blue">Skalierbarkeit:</strong> Flexible Lösungen für Vereine jeder Größe</span>
+                    <span><strong className="text-myclub-blue">Skalierbarkeit:</strong> Flexible Lösungen für Vereine jeder Grösse</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold mr-2">5.</span>

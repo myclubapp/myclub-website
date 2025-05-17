@@ -13,10 +13,11 @@ const Impressum = () => {
           <h1 className="text-4xl font-bold mb-8">Impressum</h1>
           
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Angaben gemäß § 5 TMG</h2>
+            <h2 className="text-2xl font-semibold mb-4">Angaben gemäss § 5 TMG</h2>
             <p className="text-gray-300 mb-4">
-              myclub GmbH<br />
-              Musterstraße 123<br />
+              myclub<br />
+              c/o liitu consulting gmbh<br />
+              Villenstrasse 4<br />
               8200 Schaffhausen<br />
               Schweiz
             </p>
@@ -25,7 +26,7 @@ const Impressum = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
             <p className="text-gray-300 mb-4">
-              Telefon: +41 12 345 67 89<br />
+              Telefon: +41 79 403 36 13<br />
               E-Mail: <a href="mailto:info@my-club.app" className="text-myclub-blue hover:underline">info@my-club.app</a>
             </p>
           </section>
@@ -34,23 +35,24 @@ const Impressum = () => {
             <h2 className="text-2xl font-semibold mb-4">Handelsregistereintrag</h2>
             <p className="text-gray-300 mb-4">
               Eingetragen im Handelsregister des Kantons Schaffhausen<br />
-              Registernummer: CHE-123.456.789
+              Registernummer: CHE-178.036.243
             </p>
           </section>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Umsatzsteuer-ID</h2>
             <p className="text-gray-300 mb-4">
-              Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
-              CHE-123.456.789 MWST
+              Umsatzsteuer-Identifikationsnummer gemäss §27 a Umsatzsteuergesetz:<br />
+              CHE-178.036.243
             </p>
           </section>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <p className="text-gray-300 mb-4">
-              Max Mustermann<br />
-              Musterstraße 123<br />
+              myclub<br />
+              c/o liitu consulting gmbh<br />
+              Villenstrasse 4<br />
               8200 Schaffhausen<br />
               Schweiz
             </p>

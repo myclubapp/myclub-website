@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
         </ul>
         
-        {/* CTA Buttons */}
+        {/* CTA Buttons
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" className="text-white hover:bg-white/10">
             Login
@@ -56,7 +56,7 @@ const Navbar = () => {
           <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue">
             Kostenlos testen
           </Button>
-        </div>
+        </div> */}
         
         {/* Mobile Menu Button */}
         <div className="md:hidden">

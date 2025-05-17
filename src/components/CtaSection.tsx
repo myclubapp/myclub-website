@@ -35,7 +35,7 @@ const CtaSection = () => {
           </div>
           
           <p className="mt-8 text-gray-400">
-            Schließe dich über 500+ Vereinen an, die bereits mit myclub erfolgreich arbeiten
+            Schliesse dich über 500+ Vereinen an, die bereits mit myclub erfolgreich arbeiten
           </p>
         </div>
       </div>
