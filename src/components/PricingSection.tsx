@@ -260,9 +260,11 @@ const PricingSection = () => {
             Kontaktiere uns für massgeschneiderte Pakete, die perfekt auf die Anforderungen 
             deines Vereins abgestimmt sind.
           </p>
-          <Button variant="outline" className="border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white">
-            Kontakt aufnehmen
-          </Button>
+<Button asChild variant="outline" className="border-myclub-blue text-myclub-blue hover:bg-myclub-blue hover:text-white">
+  <a href="mailto:info@my-club.app">
+    Kontakt aufnehmen
+  </a>
+</Button>
         </div>
       </div>
     </section>

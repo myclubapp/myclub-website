@@ -45,7 +45,7 @@ const HeroSection = () => {
               <Logo size="lg" className="inline-block" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-            <span className="text-myclub-blue">Vereinsarbeit</span>, die wieder Freude macht
+            <span className="text-myclub-blue">Vereinsarbeit</span>, die wieder <span className="text-myclub-blue">Freude</span> macht
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
               Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.

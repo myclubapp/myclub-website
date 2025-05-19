@@ -12,11 +12,8 @@ const AppPreviewSection = () => {
         </Badge>
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Schluss mit Excel-Chaos und WhatsApp-Flut</h2>
         <p className="text-lg text-gray-300 mb-8">
-          myclub vereint alle Vereinsprozesse in einer App.
-
-          Die myclub App bietet dir alle Funktionen für dein Vereinsmanagement -
-          jederzeit und überall verfügbar. Verwalte Trainings, Events, Spiele und mehr
-          mit nur wenigen Klicks.
+          myclub – deine zentrale Plattform für modernes Vereinsmanagement.
+          Alle Vereinsprozesse in einer einzigen App vereint: Mit myclub organisierst du Trainings, Spiele, Events und vieles mehr – flexibel, intuitiv und jederzeit verfügbar. Wenige Klicks. Volle Kontrolle. Maximaler Überblick.
         </p>
       </div>
 
@@ -51,7 +48,7 @@ const AppPreviewSection = () => {
 
       <div className="mt-16 text-center">
         <p className="text-gray-300 mb-8">
-        "Mitglieder • Training • Events • Finanzen" Alles in einer App. Für Vereine, die mehr wollen als Excel und E-Mail.
+          "Mitglieder • Training • Events • Finanzen" Alles in einer App. Für Vereine, die mehr wollen als Excel und E-Mail.
         </p>
         <a href="https://link.my-club.app/y9TCYJ" className="btn btn-primary inline-flex items-center">
           App herunterladen
