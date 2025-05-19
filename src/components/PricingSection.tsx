@@ -77,7 +77,7 @@ const plans = [
 
 const additionalModules = [
   {
-    name: "⚽ Meisterschafts-Modul",
+    name: "🏆 Meisterschafts-Modul",
     price: "5.90",
     features: [
       "API-Zugriff Verbandsdaten (swiss unihockey, Swiss Volley, Handball Schweiz",
@@ -97,7 +97,7 @@ const additionalModules = [
     ]
   },
   {
-    name: "📱 Erweiterte Features (Bundle)",
+    name: "📱 Erweiterte Features (Pro)",
     price: "7.90",
     features: [
       "J+S Integration",
