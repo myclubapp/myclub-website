@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -35,7 +34,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10">
-          {['Features', 'Preise', 'Über uns'].map(item => (
+          {['Funktionen', 'Preise', 'Über uns'].map(item => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -51,10 +50,12 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           {/*      <Button variant="ghost" className="text-white hover:bg-white/10">
             Login
-          </Button>
-          <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue">
-            Kostenlos testen
-          </Button> */}
+          </Button>*/}
+          <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue" asChild>
+            <a href="https://link.my-club.app/y9TCYJ" target="_blank" rel="noopener noreferrer">
+              App herunterladen
+            </a>
+          </Button> 
         </div>
 
         {/* Mobile Menu Button */}

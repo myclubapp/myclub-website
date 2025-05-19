@@ -51,7 +51,7 @@ const AppPreviewSection = () => {
           <p className="text-gray-300 mb-8">
             Weitere App-Funktionen: Vereinsverwaltung, Trainingsplanung, Event-Management und mehr
           </p>
-          <a href="https://init.ly/y9TCYJ" className="btn btn-primary inline-flex items-center">
+          <a href="https://link.my-club.app/y9TCYJ" className="btn btn-primary inline-flex items-center">
             App herunterladen
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>

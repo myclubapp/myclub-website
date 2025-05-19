@@ -53,11 +53,11 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full">
-                Kostenlos starten
+                Funktionen ansehen
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-            <p className="mt-6 text-gray-400 text-sm">30 Tage kostenlos • Jederzeit kündbar</p>
+           {/*  <p className="mt-6 text-gray-400 text-sm">30 Tage kostenlos • Jederzeit kündbar</p> */}
           </div>
           
           <div className="hidden lg:flex items-center justify-center relative">
