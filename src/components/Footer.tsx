@@ -56,7 +56,7 @@ const Footer = () => {
           </div> */}
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Unternehmen</h3>
+            <h3 className="text-lg font-semibold mb-4">Informationen</h3>
             <ul className="space-y-3">
               {/* <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Über uns</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Karriere</a></li>
