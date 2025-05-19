@@ -10,9 +10,10 @@ const commonFeatures = [
   "Unlimitierte Teams",
   "Unlimitierte Trainings",
   "Unlimitierte Veranstaltungen",
+  "Mehrsprachigkeit",
   "Wordpress Integration",
-  "E-Mail Support",
   "Push-Benachrichtigungen",
+  "Open Source",
 ];
 
 const plans = [
@@ -79,8 +80,9 @@ const additionalModules = [
     name: "⚽ Meisterschafts-Modul",
     price: "5.90",
     features: [
-      "API-Zugriff Verbandsdaten",
-      "Routenplanung",
+      "API-Zugriff Verbandsdaten (swiss unihockey, Swiss Volley, Handball Schweiz",
+      "Verbandnews Integration",
+      "Maps Integration",
       "Ergebnisse & Tabellen"
     ]
   },
@@ -90,7 +92,8 @@ const additionalModules = [
     features: [
       "Helfer-Events erstellen",
       "Schichtplanung",
-      "Helfer-Punktesystem"
+      "Helfer-Punktesystem",
+      "Helferpunkte Reporting"
     ]
   },
   {
@@ -99,7 +102,8 @@ const additionalModules = [
     features: [
       "J+S Integration",
       "Mitglieder-Beitragsverwaltung",
-      "Newsletter-Tool"
+      "Newsletter & Reporting",
+      "Trainingsplanung"
     ]
   }
 ];
