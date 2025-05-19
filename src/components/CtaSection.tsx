@@ -17,25 +17,23 @@ const CtaSection = () => {
             <Logo variant="light" size="md" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Bereit für die digitale Transformation deines Vereins?
+          Digitalisiere deinen Sportverein - ohne Risiko
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-10">
-            Starte deine 30-tägige kostenlose Testphase und erlebe, wie myclub 
-            dein Vereinsmanagement revolutioniert.
+          Starte noch heute mit myclub und erlebe, wie du 80% deiner Verwaltungszeit zurückgewinnst. Für Vereine bis 20 Mitglieder dauerhaft kostenlos.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full">
-              Kostenlos starten
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-full">
-              Demo anfordern
+            <Button asChild size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full">
+              <a href="https://link.my-club.app/y9TCYJ">
+                Kostenlos starten
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
           
           <p className="mt-8 text-gray-400">
-            Schliesse dich über 500+ Vereinen an, die bereits mit myclub erfolgreich arbeiten
+            Bewährte Lösung für 3100+ Unihockey-, Volleyball-, Handball- und Turnvereine in der Schweiz
           </p>
         </div>
       </div>
