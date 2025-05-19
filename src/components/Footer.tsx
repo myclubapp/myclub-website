@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">myclub</h3>
             <p className="text-gray-400 mb-4">
-              Erlebe die Zukunft der Vereinsarbeit. Digital, effizient und intuitiv - für ein modernes Vereinsleben.
+            "Vereinsarbeit, die wieder Freude macht" Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-myclub-blue transition-colors">
@@ -62,8 +62,8 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Karriere</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Kontakt</a></li> */}
               <li><Link to="/impressum" className="text-gray-400 hover:text-myclub-blue transition-colors">Impressum</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Datenschutz</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">AGB</a></li>
+              <li><a href="/privacy-policy-de" className="text-gray-400 hover:text-myclub-blue transition-colors">Datenschutz</a></li>
+              <li><a href="/terms-and-conditions-de" className="text-gray-400 hover:text-myclub-blue transition-colors">AGB</a></li>
             </ul>
           </div>
         </div>
@@ -74,11 +74,13 @@ const Footer = () => {
               © {new Date().getFullYear()} myclub. Alle Rechte vorbehalten.
             </p>
             <div className="flex space-x-6">
+              <Link to="/impressum" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Impressum</Link>
+              <p>|</p>
               <Link to="/privacy-policy-de" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Datenschutz</Link>
               <Link to="/terms-and-conditions-de" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">AGB</Link>
+              <p>|</p>
               <Link to="/terms-and-conditions" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Terms & Conditions</Link>
               <Link to="/privacy-policy" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Privacy Policy</Link>
-              <Link to="/impressum" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Impressum</Link>
             </div>
           </div>
         </div>

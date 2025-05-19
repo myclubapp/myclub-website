@@ -33,16 +33,19 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-10">
-          {['Funktionen', 'Preise', 'Über uns'].map(item => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase().replace(' ', '-')}`}
-                className="text-white hover:text-myclub-blue transition-colors font-medium"
-              >
-                {item}
-              </a>
-            </li>
+        <ul className="hidden md:flex space-x-10 items-center">
+          {['Funktionen', 'Preise', 'Über uns'].map((item, index) => (
+            <React.Fragment key={item}>
+              <li>
+                <a
+                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  className="text-white hover:text-myclub-blue transition-colors font-medium"
+                >
+                  {item}
+                </a>
+              </li>
+              {index < 2 && <li className="text-white/30">|</li>}
+            </React.Fragment>
           ))}
         </ul>
 
