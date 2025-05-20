@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">myclub</h3>
             <p className="text-gray-400 mb-4">
-            "Vereinsarbeit, die wieder Freude macht" Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
+              "Vereinsarbeit, die wieder Freude macht" Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-myclub-blue transition-colors">
@@ -32,7 +32,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Produkt</h3>
             <ul className="space-y-3">
@@ -43,8 +43,8 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Release Notes</a></li>  */}
             </ul>
           </div>
-          
-         {/* <div>
+
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Ressourcen</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Dokumentation</a></li>
@@ -54,20 +54,32 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Partner</a></li>
             </ul>
           </div> */}
-          
           <div>
-            <h3 className="text-lg font-semibold mb-4">Informationen</h3>
+            <h3 className="text-lg font-semibold mb-4">Soziale Medien</h3>
+            <ul className="space-y-3">
+              <li><a href="https://github.com/myclubapp" className="text-gray-400 hover:text-myclub-blue transition-colors">GitHub</a></li>
+              <li><a href="https://twitter.com/my_club_app" className="text-gray-400 hover:text-myclub-blue transition-colors">Twitter</a></li>
+              <li><a href="https://www.instagram.com/p/CD2LeTkJisD/" className="text-gray-400 hover:text-myclub-blue transition-colors">Instagram</a></li>  
+              <li><a href="https://www.facebook.com/myclubthenextgeneration" className="text-gray-400 hover:text-myclub-blue transition-colors">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/company/myclub-thenextgeneration/" className="text-gray-400 hover:text-myclub-blue transition-colors">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Privatsphäre</h3>
             <ul className="space-y-3">
               {/* <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Über uns</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Karriere</a></li>
               <li><a href="#" className="text-gray-400 hover:text-myclub-blue transition-colors">Kontakt</a></li> */}
-              <li><Link to="/impressum" className="text-gray-400 hover:text-myclub-blue transition-colors">Impressum</Link></li>
+              <li><a href="/impressum" className="text-gray-400 hover:text-myclub-blue transition-colors">Impressum</a></li>
               <li><a href="/privacy-policy-de" className="text-gray-400 hover:text-myclub-blue transition-colors">Datenschutz</a></li>
               <li><a href="/terms-and-conditions-de" className="text-gray-400 hover:text-myclub-blue transition-colors">AGB</a></li>
             </ul>
           </div>
+
+
+
         </div>
-        
+
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
