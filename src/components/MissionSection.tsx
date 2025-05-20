@@ -17,7 +17,7 @@ const MissionSection = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2 text-white">Unsere Mission</h3>
                 <p className="text-gray-300">
-                  Wir nehmen den administrativen Ballast von den Schultern der 375.000 Ehrenamtlichen in Schweizer Sportvereinen. Damit bleibt mehr Zeit für das, was wirklich zählt: Den Sport.
+                  Wir nehmen den administrativen Ballast von den Schultern der 375'000 Ehrenamtlichen in Schweizer Sportvereinen. Damit bleibt mehr Zeit für das, was wirklich zählt: Den Sport.
                 </p>
               </div>
 
