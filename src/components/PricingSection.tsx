@@ -117,8 +117,7 @@ const PricingSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Transparente Preisgestaltung</h2>
           <p className="text-lg text-gray-300 mb-10">
-            Finde den passenden Plan für deinen Verein. Alle Pläne beinhalten 
-            eine 30-tägige kostenlose Testphase ohne Verpflichtungen.
+          Transparente Preise basierend auf deiner Vereinsgrösse. Keine Feature-Unterschiede, keine versteckten Kosten - für kleine Vereine bis 20 Mitglieder sogar komplett kostenlos.
           </p>
           
           <div className="flex items-center justify-center mb-12">
