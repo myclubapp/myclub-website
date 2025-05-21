@@ -28,7 +28,7 @@ const Navbar = () => {
       }`}>
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <Logo variant="light" size="md" className="mr-2" />
         </a>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             <React.Fragment key={item}>
               <li>
                 <a
-                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  href={`/#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-white hover:text-myclub-blue transition-colors font-medium"
                 >
                   {item}
@@ -77,7 +77,7 @@ const Navbar = () => {
             {['Features', 'Preise', 'Über uns'].map(item => (
               <li key={item}>
                 <a
-                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  href={`/#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-white hover:text-myclub-blue transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
