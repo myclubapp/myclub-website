@@ -54,7 +54,7 @@ const HeroSection = () => {
             Digital. Einfach. Gemeinsam.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full" asChild>
-              <a href="#features">
+              <a href="#funktionen">
                 Funktionen ansehen
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
