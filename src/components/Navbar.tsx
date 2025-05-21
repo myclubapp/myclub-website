@@ -58,7 +58,7 @@ const Navbar = () => {
             <a href="https://link.my-club.app/y9TCYJ" target="_blank" rel="noopener noreferrer">
               App herunterladen
             </a>
-          </Button> 
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -87,12 +87,15 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex flex-col space-y-3">
-            <Button variant="outline" className="border-white/20 text-white w-full hover:bg-white/10">
+            {/* <Button variant="outline" className="border-white/20 text-white w-full hover:bg-white/10">
               Login
+            </Button>*/}
+            <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue" asChild>
+              <a href="https://link.my-club.app/y9TCYJ" target="_blank" rel="noopener noreferrer">
+                App herunterladen
+              </a>
             </Button>
-            <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue w-full">
-              Kostenlos testen
-            </Button>
+
           </div>
         </div>
       </div>
