@@ -97,7 +97,7 @@ const additionalModules = [
     ]
   },
   {
-    name: "📱 Erweiterte Features (Pro)",
+    name: "🚀 myclub PRO",
     price: "7.90",
     features: [
       "J+S Integration",
