@@ -21,6 +21,7 @@ const plans = [
     name: "myclub | micro",
     description: "Für Vereine bis 20 Mitglieder",
     monthlyPrice: "0.00",
+    yearlyPrice: "notAvailable",
     features: [
 
     ],
@@ -156,7 +157,9 @@ const PricingSection = () => {
           
           {/* Pricing cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {plans.map((plan, index) => (
+            {plans
+              .filter(plan => !isYearly || plan.yearlyPrice !== "notAvailable")
+              .map((plan, index) => (
               <Card 
                 key={index}
                 className={`border ${plan.popular ? 'ring-2 ring-myclub-purple ring-offset-black' : ''} ${plan.color} backdrop-blur-sm relative overflow-hidden`}
