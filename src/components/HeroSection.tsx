@@ -49,9 +49,9 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
             Mit myclub wird aus Pflicht wieder Passion.
+            <br />  
+            Digital. Einfach. Gemeinsam.
           </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0">
-            Digital. Einfach. Gemeinsam.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full" asChild>
               <a href="#funktionen">
