@@ -9,7 +9,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">myclub</h3>
             <p className="text-gray-400 mb-4">
-              Vereinsarbeit, die wieder Freude macht. Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
+              Vereinsarbeit, die wieder Freude macht. Mit myclub wird aus Pflicht wieder Passion.
+              <br />
+              Digital. Einfach. Gemeinsam.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/myclubthenextgeneration" className="text-gray-500 hover:text-myclub-blue transition-colors">
@@ -59,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="https://github.com/myclubapp" className="text-gray-400 hover:text-myclub-blue transition-colors">GitHub</a></li>
               <li><a href="https://twitter.com/my_club_app" className="text-gray-400 hover:text-myclub-blue transition-colors">Twitter</a></li>
-              <li><a href="https://www.instagram.com/p/CD2LeTkJisD/" className="text-gray-400 hover:text-myclub-blue transition-colors">Instagram</a></li>  
+              <li><a href="https://www.instagram.com/p/CD2LeTkJisD/" className="text-gray-400 hover:text-myclub-blue transition-colors">Instagram</a></li>
               <li><a href="https://www.facebook.com/myclubthenextgeneration" className="text-gray-400 hover:text-myclub-blue transition-colors">Facebook</a></li>
               <li><a href="https://www.linkedin.com/company/myclub-thenextgeneration/" className="text-gray-400 hover:text-myclub-blue transition-colors">LinkedIn</a></li>
             </ul>
