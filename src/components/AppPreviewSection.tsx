@@ -28,7 +28,7 @@ const AppPreviewSection = () => {
         </div>
 
         {/* App Preview 2 - News */}
-        <div className="hidden lg:flex justify-center">
+        <div className="flex justify-center">
           <div className="w-64 h-auto rounded-lg overflow-hidden shadow-xl animate-phone-slide" style={{
             animationDelay: '0.3s'
           }}>
@@ -48,7 +48,7 @@ const AppPreviewSection = () => {
 
       <div className="mt-16 text-center">
         <p className="text-gray-300 mb-8">
-          "Mitglieder • Training • Events • Finanzen" Alles in einer App. Für Vereine, die mehr wollen als Excel und E-Mail.
+          Mitglieder • Training • Events • Finanzen - Alles in einer App. Für Vereine, die mehr wollen als Excel und E-Mail.
         </p>
         <a href="https://link.my-club.app/y9TCYJ" className="btn btn-primary inline-flex items-center">
           App herunterladen
