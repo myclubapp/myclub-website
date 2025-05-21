@@ -21,7 +21,6 @@ const plans = [
     name: "myclub | micro",
     description: "Für Vereine bis 20 Mitglieder",
     monthlyPrice: "0.00",
-    yearlyPrice: "0.00",
     features: [
 
     ],
