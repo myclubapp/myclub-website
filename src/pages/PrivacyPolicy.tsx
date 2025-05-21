@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -10,7 +9,7 @@ const PrivacyPolicy = () => {
       <Navbar />
       <main className="container-custom py-32">
         <div className="max-w-4xl mx-auto text-white">
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold mb-8">Privacy Policy (Version May 2025)</h1>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
@@ -22,7 +21,7 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Collection and Use of Information</h2>
             <p className="text-gray-300 mb-4">
-              For a better experience while using our app, we may require certain personally identifiable information from you, including but not limited to your email address, first and last name. The information we collect is used to identify and manage your club membership and is necessary for the functionality of our app.
+              For a better experience while using our app, we may require certain personally identifiable information from you, including but not limited to your email address, first and last name, date of birth, phone number, and residential address. The collected information is used to identify and manage your club membership and is necessary for the functionality of our app. It serves exclusively for member management within the club.
             </p>
             
             <h3 className="text-xl font-semibold mb-2">a. Profile Creation</h3>
@@ -31,7 +30,7 @@ const PrivacyPolicy = () => {
                 <strong>Required Information:</strong> To create an account, we require your email address, first name, and last name. This is necessary for club administrators to approve your membership request.
               </li>
               <li>
-                <strong>Additional Information:</strong> Your residential address and phone number are collected for the management of your club membership and are only visible to your club and team administrators.
+                <strong>Additional Information:</strong> Your residential address, date of birth, profile picture, and phone number are collected for the management of your club membership and are only visible to your club and team administrators.
               </li>
             </ul>
             
@@ -46,7 +45,7 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Deleting Your Profile</h2>
             <p className="text-gray-300 mb-4">
-              You have the option to delete your profile directly in the app. Navigate to your profile page, scroll down, and select "Danger zone: Delete profile." Please note that this action is immediate and irreversible and will result in the deletion of all your personal data from our systems.
+              You have the option to delete your profile directly in the app. Navigate to your profile page, scroll down, and select "Delete profile". Please note that this action is immediate and irreversible and will result in the deletion of all your personal data from our systems. Deleting your profile is not connected to leaving the club.
             </p>
           </section>
           
@@ -60,7 +59,7 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Security</h2>
             <p className="text-gray-300 mb-4">
-              We value your trust in providing your personal information and strive to use commercially acceptable means to protect it. However, remember that no method of transmission over the internet or electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
+              We value your trust in providing your personal information and strive to use commercially acceptable means to protect it. However, remember that no method of transmission over the internet or electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security. You can check and improve the code on GitHub at any time!
             </p>
           </section>
           

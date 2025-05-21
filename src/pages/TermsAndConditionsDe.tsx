@@ -10,7 +10,7 @@ const TermsAndConditionsDe = () => {
       <main className="pt-32 pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-white">
-            <h1 className="text-3xl font-bold mb-6">Geschäftsbedingungen</h1>
+            <h1 className="text-3xl font-bold mb-6">Geschäftsbedingungen (Version Mai 2025)</h1>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Einführung</h2>
@@ -21,16 +21,16 @@ const TermsAndConditionsDe = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Nutzung des Dienstes</h2>
-              <p className="text-gray-300 mb-2">a. Der Dienst ist für Benutzer gedacht, die mindestens 13 Jahre alt sind.</p>
+              <p className="text-gray-300 mb-2">a. Der Dienst ist für Benutzer gedacht, die mindestens 18 Jahre alt sind. Minderjährige Personen dürfen den Dienst nur in Absprache mit ihren gesetzlichen Erziehungsberechtigten nutzen.</p>
               <p className="text-gray-300 mb-2">b. Sie dürfen den Dienst nur zu rechtmässigen Zwecken und in Übereinstimmung mit diesen Bedingungen nutzen.</p>
-              <p className="text-gray-300 mb-2">c. Jede Nutzung oder Zugriff durch Personen unter 13 Jahren ist verboten.</p>
+              <p className="text-gray-300 mb-2">c. Jede Nutzung oder Zugriff durch Personen unter 18 Jahren ist verboten, es sei denn, dass die Nutzung in Absprache mit den gesetzlichen Erziehungsberechtigten erfolgt.</p>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Konten</h2>
               <p className="text-gray-300 mb-2">a. Um bestimmte Funktionen des Dienstes nutzen zu können, müssen Sie ein Konto erstellen.</p>
               <p className="text-gray-300 mb-2">b. Sie sind verantwortlich für die Wahrung der Vertraulichkeit Ihrer Kontozugangsdaten.</p>
-              <p className="text-gray-300 mb-2">c. Sie erklären sich damit einverstanden, uns sofort zu informieren, wenn Sie von einer Verletzung der Sicherheit oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen.</p>
+              <p className="text-gray-300 mb-2">c. Sie erklären sich damit einverstanden, uns sofort zu informieren, wenn Sie von einer Verletzung der Sicherheit oder einer unbefugten Nutzung Ihres Kontos Kenntnis erlangen. Nutzen Sie dazu die E-Mail-Adresse <a href="mailto:support@my-club.app" className="text-myclub-blue hover:underline">support@my-club.app</a></p>
             </section>
             
             <section className="mb-8">
@@ -90,7 +90,7 @@ const TermsAndConditionsDe = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Kontaktieren Sie uns</h2>
-              <p className="text-gray-300">Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter info@my-club.app</p>
+              <p className="text-gray-300">Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter <a href="mailto:info@my-club.app" className="text-myclub-blue hover:underline">info@my-club.app</a></p>
             </section>
           </div>
         </div>

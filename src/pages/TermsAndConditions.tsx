@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,7 +9,7 @@ const TermsAndConditions = () => {
       <main className="pt-32 pb-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-white">
-            <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
+            <h1 className="text-3xl font-bold mb-6">Terms and Conditions (Version May 2025</h1>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
@@ -21,16 +20,16 @@ const TermsAndConditions = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Use of Service</h2>
-              <p className="text-gray-300 mb-2">a. The Service is intended for users who are at least 13 years old.</p>
+              <p className="text-gray-300 mb-2">a. The Service is intended for users who are at least 18 years old. Minors may only use the Service in consultation with their legal guardians.</p>
               <p className="text-gray-300 mb-2">b. You may only use the Service for lawful purposes and in accordance with these Terms.</p>
-              <p className="text-gray-300 mb-2">c. Any use or access by persons under 13 years of age is prohibited.</p>
+              <p className="text-gray-300 mb-2">c. Any use or access by persons under 18 years of age is prohibited, unless the use is in consultation with legal guardians.</p>
             </section>
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Accounts</h2>
               <p className="text-gray-300 mb-2">a. To use certain features of the Service, you must create an account.</p>
               <p className="text-gray-300 mb-2">b. You are responsible for maintaining the confidentiality of your account credentials.</p>
-              <p className="text-gray-300 mb-2">c. You agree to promptly notify us if you become aware of any breach of security or unauthorized use of your account.</p>
+              <p className="text-gray-300 mb-2">c. You agree to promptly notify us if you become aware of any breach of security or unauthorized use of your account. Please use the email address <a href="mailto:support@my-club.app" className="text-myclub-blue hover:underline">support@my-club.app</a></p>
             </section>
             
             <section className="mb-8">
@@ -90,7 +89,7 @@ const TermsAndConditions = () => {
             
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-              <p className="text-gray-300">If you have any questions about these Terms, please contact us at info@my-club.app</p>
+              <p className="text-gray-300">If you have any questions about these Terms, please contact us at <a href="mailto:info@my-club.app" className="text-myclub-blue hover:underline">info@my-club.app</a></p>
             </section>
           </div>
         </div>

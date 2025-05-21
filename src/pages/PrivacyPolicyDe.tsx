@@ -10,19 +10,19 @@ const PrivacyPolicyDe = () => {
       <Navbar />
       <main className="container-custom py-32">
         <div className="max-w-4xl mx-auto text-white">
-          <h1 className="text-4xl font-bold mb-8">Datenschutzrichtlinie</h1>
+          <h1 className="text-4xl font-bold mb-8">Datenschutzrichtlinie (Version Mai 2025)</h1>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Einführung</h2>
             <p className="text-gray-300 mb-4">
-              Willkommen bei myclub | die nächste Generation. Diese Datenschutzrichtlinie umreisst unsere Praktiken bezüglich der Sammlung, Nutzung und Offenlegung Ihrer Informationen, wenn Sie unsere App verwenden, sowie die damit verbundenen Wahlmöglichkeiten.
+              Willkommen bei myclub | the next generation. Diese Datenschutzrichtlinie umreisst unsere Praktiken bezüglich der Sammlung, Nutzung und Offenlegung Ihrer Informationen, wenn Sie unsere App verwenden, sowie die damit verbundenen Wahlmöglichkeiten.
             </p>
           </section>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Sammlung und Nutzung von Informationen</h2>
             <p className="text-gray-300 mb-4">
-              Für ein besseres Erlebnis bei der Nutzung unserer App benötigen wir möglicherweise bestimmte persönlich identifizierbare Informationen von Ihnen, einschliesslich, aber nicht beschränkt auf Ihre E-Mail-Adresse, Vor- und Nachnamen. Die gesammelten Informationen werden zur Identifikation und Verwaltung Ihrer Clubmitgliedschaft verwendet und sind für die Funktionalität unserer App notwendig.
+              Für ein besseres Erlebnis bei der Nutzung unserer App benötigen wir möglicherweise bestimmte persönlich identifizierbare Informationen von Ihnen, einschliesslich, aber nicht beschränkt auf Ihre E-Mail-Adresse, Vor- und Nachnamen, Geburtsdatum, Telefonnummer und Wohnadresse. Die gesammelten Informationen werden zur Identifikation und Verwaltung Ihrer Clubmitgliedschaft verwendet und sind für die Funktionalität unserer App notwendig. Dienen aber ausschliesslich der Mitgliederverwaltung innerhalb des Vereins.
             </p>
             
             <h3 className="text-xl font-semibold mb-2">a. Profilerstellung</h3>
@@ -31,7 +31,7 @@ const PrivacyPolicyDe = () => {
                 <strong>Erforderliche Informationen:</strong> Zur Erstellung eines Kontos benötigen wir Ihre E-Mail-Adresse, Vor- und Nachnamen. Dies ist notwendig, damit Clubadministratoren Ihre Mitgliedschaftsanfrage genehmigen können.
               </li>
               <li>
-                <strong>Zusätzliche Informationen:</strong> Ihre Wohnadresse und Telefonnummer werden für die Verwaltung Ihrer Clubmitgliedschaft gesammelt und sind nur für Ihre Club- und Teamadministratoren sichtbar.
+                <strong>Zusätzliche Informationen:</strong> Ihre Wohnadresse, Geburtsdatum, Profilbild und Telefonnummer werden für die Verwaltung Ihrer Clubmitgliedschaft gesammelt und sind nur für Ihre Club- und Teamadministratoren sichtbar.
               </li>
             </ul>
             
@@ -46,7 +46,7 @@ const PrivacyPolicyDe = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Löschung Ihres Profils</h2>
             <p className="text-gray-300 mb-4">
-              Sie haben die Möglichkeit, Ihr Profil direkt in der App zu löschen. Navigieren Sie zu Ihrer Profilseite, scrollen Sie nach unten und wählen Sie "Gefahrenzone: Profil löschen". Bitte beachten Sie, dass diese Aktion sofortig und unwiderruflich ist und zur Löschung aller Ihrer persönlichen Daten aus unseren Systemen führt.
+              Sie haben die Möglichkeit, Ihr Profil direkt in der App zu löschen. Navigieren Sie zu Ihrer Profilseite, scrollen Sie nach unten und wählen Sie "Profil löschen". Bitte beachten Sie, dass diese Aktion sofortig und unwiderruflich ist und zur Löschung aller Ihrer persönlichen Daten aus unseren Systemen führt. Die Löschung des Profils ist nicht mit einem Vereinsaustritt zu verbinden.
             </p>
           </section>
           
@@ -60,7 +60,7 @@ const PrivacyPolicyDe = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Sicherheit</h2>
             <p className="text-gray-300 mb-4">
-              Wir schätzen Ihr Vertrauen in die Bereitstellung Ihrer persönlichen Informationen und bemühen uns, diese mit kommerziell akzeptablen Mitteln zu schützen. Denken Sie jedoch daran, dass keine Übertragungsmethode über das Internet oder elektronische Speichermethode zu 100% sicher und zuverlässig ist und wir ihre absolute Sicherheit nicht garantieren können.
+              Wir schätzen Ihr Vertrauen in die Bereitstellung Ihrer persönlichen Informationen und bemühen uns, diese mit kommerziell akzeptablen Mitteln zu schützen. Denken Sie jedoch daran, dass keine Übertragungsmethode über das Internet oder elektronische Speichermethode zu 100% sicher und zuverlässig ist und wir ihre absolute Sicherheit nicht garantieren können. Sie können den Code jederzeit auf GitHub überprüfen und verbessern!
             </p>
           </section>
           
