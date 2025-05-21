@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">myclub</h3>
             <p className="text-gray-400 mb-4">
-              "Vereinsarbeit, die wieder Freude macht" Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
+              Vereinsarbeit, die wieder Freude macht. Mit myclub wird aus Pflicht wieder Passion. Digital. Einfach. Gemeinsam.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/myclubthenextgeneration" className="text-gray-500 hover:text-myclub-blue transition-colors">
