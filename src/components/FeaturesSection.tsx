@@ -49,7 +49,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section bg-gray-900 py-20">
+    <section id="funktionen" className="section bg-gray-900 py-20">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Alle Features für Ihren Verein</h2>
