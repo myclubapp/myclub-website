@@ -2,7 +2,7 @@ import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 const AppPreviewSection = () => {
-  return <section id="features" className="section bg-gradient-to-br from-black to-gray-900 py-24 relative overflow-hidden">
+  return <section id="funktionen" className="section bg-gradient-to-br from-black to-gray-900 py-24 relative overflow-hidden">
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(51,155,222,0.15),transparent_40%),radial-gradient(circle_at_70%_70%,rgba(121,93,235,0.15),transparent_35%)]"></div>
 
     <div className="container-custom relative z-10">
