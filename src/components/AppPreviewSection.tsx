@@ -28,7 +28,7 @@ const AppPreviewSection = () => {
         </div>
 
         {/* App Preview 2 - News */}
-        <div className="flex justify-center">
+        <div className="hidden md:flex justify-center">
           <div className="w-64 h-auto rounded-lg overflow-hidden shadow-xl animate-phone-slide" style={{
             animationDelay: '0.3s'
           }}>
