@@ -15,5 +15,7 @@
           }
         ]
       }
-    ]
+    ],
+    "trailingSlash": false,
+    "cleanUrls": true
 }
