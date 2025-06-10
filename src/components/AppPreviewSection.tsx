@@ -50,7 +50,7 @@ const AppPreviewSection = () => {
         <p className="text-gray-300 mb-8">
           Mitglieder • Training • Events • Finanzen - Alles in einer App. Für Vereine, die mehr wollen als Excel und E-Mail.
         </p>
-        <a href="https://link.my-club.app/y9TCYJ" className="btn btn-primary inline-flex items-center">
+        <a href="https://link.my-club.app/app-store" className="btn btn-primary inline-flex items-center">
           App herunterladen
           <ArrowRight className="ml-2 h-5 w-5" />
         </a>

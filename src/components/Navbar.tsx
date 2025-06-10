@@ -55,7 +55,7 @@ const Navbar = () => {
             Login
           </Button>*/}
           <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue" asChild>
-            <a href="https://link.my-club.app/y9TCYJ" target="_blank" rel="noopener noreferrer">
+            <a href="https://link.my-club.app/app-store" target="_blank" rel="noopener noreferrer">
               App herunterladen
             </a>
           </Button>
@@ -91,7 +91,7 @@ const Navbar = () => {
               Login
             </Button>*/}
             <Button className="bg-myclub-blue text-white hover:bg-myclub-darkblue" asChild>
-              <a href="https://link.my-club.app/y9TCYJ" target="_blank" rel="noopener noreferrer">
+              <a href="https://link.my-club.app/app-store" target="_blank" rel="noopener noreferrer">
                 App herunterladen
               </a>
             </Button>

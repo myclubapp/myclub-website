@@ -25,7 +25,7 @@ const CtaSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-myclub-blue text-white hover:bg-myclub-darkblue text-lg px-8 py-6 rounded-full">
-              <a href="https://link.my-club.app/y9TCYJ">
+              <a href="https://link.my-club.app/app-store">
                 Kostenlos starten
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
