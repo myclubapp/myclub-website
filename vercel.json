@@ -17,23 +17,5 @@
       }
     ],
     "trailingSlash": false,
-    "cleanUrls": true,
-    "routes": [
-      {
-        "src": "/terms-and-conditions-de",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/terms-and-conditions",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/privacy-policy-de",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/privacy-policy",
-        "dest": "/index.html"
-      }
-    ]
+    "cleanUrls": true
 }
