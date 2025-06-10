@@ -1,5 +1,10 @@
 {
-
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
     "headers": [
       {
         "source": "/(.*)",
@@ -11,6 +16,6 @@
         ]
       }
     ],
-    "trailingSlash": false,
-    "cleanUrls": true
+    "trailingSlash": true,
+    "cleanUrls": false
 }
