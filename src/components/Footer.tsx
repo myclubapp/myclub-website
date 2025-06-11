@@ -65,6 +65,12 @@ const Footer = () => {
               <li><a href="https://www.facebook.com/myclubthenextgeneration" className="text-gray-400 hover:text-myclub-blue transition-colors">Facebook</a></li>
               <li><a href="https://www.linkedin.com/company/myclub-thenextgeneration/" className="text-gray-400 hover:text-myclub-blue transition-colors">LinkedIn</a></li>
             </ul>
+            {/* Swiss Made Software Logo */}
+            <div className="mt-6">
+              <a href="https://www.swissmadesoftware.org/companies/liitu-consulting-gmbh/home.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+                <img src="/icons/swiss-made-software.png" alt="swiss made software" className="h-10 mr-2" />
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Privatsphäre</h3>
@@ -99,13 +105,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Swiss Made Software Logo */}
-        <div className="mt-6">
-          <a href="https://www.swissmadesoftware.org/companies/liitu-consulting-gmbh/home.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-            <img src="/icons/swiss-made-software.png" alt="swiss made software" className="h-10 mr-2" />
-            <span className="text-[#F44336] font-bold text-lg">swiss made software</span>
-          </a>
-        </div>
+
       </div>
     </footer>
   );
