@@ -80,7 +80,7 @@ const HeroSection = () => {
               </CarouselItem>)}
             </CarouselContent>
           </Carousel>
-          <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div>
+          {/* <div className="absolute -bottom-5 -right-5 bg-myclub-purple text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">Deine Vereins-App</div> */}
         </div>
       </div>
     </div>
