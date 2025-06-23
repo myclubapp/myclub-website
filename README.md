@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# myclub – Die App für modernes Vereinsmanagement
 
-## Project info
+**myclub** digitalisiert die Vereinsarbeit und macht sie wieder zur Leidenschaft. Mit unserer App organisierst du Mitglieder, Trainings, Events, Helfereinsätze und mehr – alles an einem Ort, einfach und intuitiv.
 
-**URL**: https://lovable.dev/projects/1b7e2c62-7a22-41d8-809e-8c3313903cfb
+## Hauptfunktionen
 
-## How can I edit this code?
+- **Mitgliederverwaltung**  
+  Verwalte alle Teams und Mitglieder übersichtlich, inkl. Profile, Eltern-Kind-Verknüpfung und teamübergreifender Organisation.
 
-There are several ways of editing your application.
+- **Event- & Trainingsorganisation**  
+  Plane und koordiniere Trainings, Spiele und Vereinsveranstaltungen mit automatischen Benachrichtigungen und Teilnehmerverwaltung.
 
-**Use Lovable**
+- **Helferpunkte-System**  
+  Transparente Verwaltung und Nachverfolgung von Helfereinsätzen und verdienten Punkten – inkl. Bestätigungsprozess und Berichte.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1b7e2c62-7a22-41d8-809e-8c3313903cfb) and start prompting.
+- **Kommunikation**  
+  Integriertes News-System, Push- und E-Mail-Benachrichtigungen sowie In-App-Mitteilungen für alle Mitglieder.
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Reporting & Statistiken**  
+  Umfassende Auswertungen zu Helferpunkten, Teilnahme, Export-Funktionen und Dashboards.
 
-**Use your preferred IDE**
+- **Multi-Platform**  
+  Verfügbar als iOS- und Android-App sowie als Web-App (PWA) – auch offline nutzbar.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Zusatzmodule**  
+  - Meisterschafts-Modul: Verbandsdaten, Ergebnisse, Tabellen, Maps-Integration  
+  - Helfer-Modul: Schichtplanung, Helferpunkte-Reporting  
+  - myclub PRO: J+S-Integration, Beitragsverwaltung, Newsletter, erweiterte Trainingsplanung
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Für wen ist myclub?
 
-Follow these steps:
+- **Vorstände:** Administrative Entlastung und Überblick
+- **Trainer:** Einfache Planung und Teilnehmerverwaltung
+- **Spieler:** Immer informiert durch Push-Benachrichtigungen
+- **Eltern:** Transparente Kommunikation und einfache Helfer-Koordination
+- **Vereine:** Nachhaltige Strukturen für die digitale Zukunft
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Preise
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Für kleine Vereine bis 20 Mitglieder dauerhaft kostenlos
+- Flexible Pakete je nach Vereinsgröße
+- Zusatzmodule individuell zubuchbar
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Starte jetzt
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1b7e2c62-7a22-41d8-809e-8c3313903cfb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. App herunterladen: [App Store Link](https://link.my-club.app/app-store)
+2. Kostenlos registrieren und Verein anlegen
+3. Vereinsarbeit digitalisieren und Zeit sparen
