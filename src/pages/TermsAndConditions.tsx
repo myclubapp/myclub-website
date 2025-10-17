@@ -4,11 +4,10 @@ import Footer from "@/components/Footer";
 
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-gradient-to-b from-black via-myclub-darkblue/20 to-black">
       <Navbar />
-      <main className="pt-32 pb-16">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-white">
+      <main className="container-custom pt-32 pb-16">
+        <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl font-bold mb-6">Terms and Conditions (Version May 2025</h1>
             
             <section className="mb-8">
@@ -91,7 +90,6 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p className="text-gray-300">If you have any questions about these Terms, please contact us at <a href="mailto:info@my-club.app" className="text-myclub-blue hover:underline">info@my-club.app</a></p>
             </section>
-          </div>
         </div>
       </main>
       <Footer />
