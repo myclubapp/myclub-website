@@ -34,17 +34,17 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10 items-center">
-          {['Funktionen', 'Preise', 'Über uns'].map((item, index) => (
+          {['Funktionen', 'Preise', 'Über uns', 'FAQ'].map((item, index) => (
             <React.Fragment key={item}>
               <li>
                 <a
-                  href={`/#${item.toLowerCase().replace(' ', '-')}`}
+                  href={item === 'FAQ' ? '/faq' : `/#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-white hover:text-myclub-blue transition-colors font-medium"
                 >
                   {item}
                 </a>
               </li>
-              {index < 2 && <li className="text-white/30">|</li>}
+              {index < 3 && <li className="text-white/30">|</li>}
             </React.Fragment>
           ))}
         </ul>
@@ -74,10 +74,10 @@ const Navbar = () => {
         } overflow-hidden transition-all duration-300`}>
         <div className="container-custom flex flex-col space-y-4 pb-5">
           <ul className="flex flex-col space-y-4">
-            {['Features', 'Preise', 'Über uns'].map(item => (
+            {['Features', 'Preise', 'Über uns', 'FAQ'].map(item => (
               <li key={item}>
                 <a
-                  href={`/#${item.toLowerCase().replace(' ', '-')}`}
+                  href={item === 'FAQ' ? '/faq' : `/#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-white hover:text-myclub-blue transition-colors font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
