@@ -109,6 +109,21 @@ const Faq = () => {
                 </AccordionContent>
               </AccordionItem>
 
+              <AccordionItem value="item-9" className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-6">
+                <AccordionTrigger className="text-white hover:text-myclub-blue">
+                  Wie entferne ich ein Kind aus meinem Eltern-Account?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-300">
+                  <ol className="list-decimal pl-6 space-y-2">
+                    <li>Öffne dein Profil in der App.</li>
+                    <li>Scrolle zum Bereich <strong>Kinder</strong>.</li>
+                    <li>Wische beim entsprechenden Kind den Eintrag von rechts nach links.</li>
+                    <li>Tippe auf <strong>Entfernen</strong> und bestätige die Abfrage.</li>
+                  </ol>
+                  <p className="mt-4">Wichtig: Es wird nur die Verknüpfung zu deinem Eltern-Account aufgehoben. Das Profil des Kindes bleibt bestehen und wird <strong>nicht</strong> gelöscht. Eine erneute Verknüpfung ist jederzeit möglich.</p>
+                </AccordionContent>
+              </AccordionItem>
+
               <AccordionItem value="item-6" className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-6">
                 <AccordionTrigger className="text-white hover:text-myclub-blue">
                   Was kann ich als Elternteil in der App machen?
