@@ -93,7 +93,15 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} myclub. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} myclub. Lizenziert unter{' '}
+              <a
+                href="https://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-myclub-blue transition-colors"
+              >
+                CC BY-SA 4.0
+              </a>.
             </p>
             <div className="flex space-x-6">
               <Link to="/impressum" className="text-gray-500 hover:text-myclub-blue transition-colors text-sm">Impressum</Link>
